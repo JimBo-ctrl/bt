@@ -2,135 +2,137 @@
   !This file contains a Map of trigger regexes that an individual might find offensive.
 !The number is an arbitary reference that allows the trigger to be refered to to a third party
 !without revealing the trigger itself.
-!
+
 
 !ASCII values
 !\057 	/ 	Solidus/Slash
 !\134 	\ 	Reverse solidus/Backslash
 
 
-!/\b1984\b/,'540',  //too many false positives
-/Afghanistan/i,'550',
-/Animal\s*farm/i,'560',
-/\bA\.I\.\b/i,'565',
-/flat\s*earth/i,'1000',
-/(Northern|N\.)\s*Ireland/i,'1010',
-/(scottish|welsh)\s*independance/i,'1020',
-/activis[tm]/i,'1030',
-!problem too short: /\bAI\b/,'1040',
-/al[-\s]*Qaeda/i,'1050',
-/alternative\s*medicine/i,'1060',
-/Anarchis[tm]/i,'1070',
-/(animal|climate|extinction)\s*rebellion/i,'1080',
-/animal\s*rights/i,'1090',
-!/\barian\b/i,'1100',  // is arian really a problem?
-/artificial\s*intelligence/i,'1110',
-/axis\s*of\s*evil/i,'1120',
-/Betty\s*Campbell/i,'1130',
-/bin\s*laden/i,'1140',
-/black\s*(power|panther|lives|face)/i,'1150',
-/\bB[\s\.]*L[\s\.]*M\.*\b/,'1160',
-/blyton/i,'1170',
-/bombing/i,'1180',
-/Boogaloo/i,'1190',
-/British\s*empire/i,'1200',
-/buddis[tm]/i,'1210',
-/Bulletin\s*of\s*the\s*Atomic\s*Scientists/i,'1220',
-/burqa/i,'1225',
-/C[\s\.]*S[\s\.]*Lewis/i,'1230',
-/caliphate/i,'1240',
-/call\s*to\s*prayer/i,'1250',
-/cancel\s*culture/i,'1260',
-/capitalis[tm]/i,'1270',
-/(Cards|crimes)\s*against\s*humanity/i,'1280',
-/Chamberlain/i,'1290',
-/Charlie\s*hebdo/i,'1300',
-/chavs/i,'1310',
-!/civil\s*war/i,'1320', // too non-specific
-/colonialis[tm]/i,'1330',
-/comm(ie|unis[tm])/i,'1340',
-/creationis[tm]/i,'1350',
-/da\s*vinci\s*code/i,'1360',
-/daily\s*mail/i,'1370',
-/dali\s*lama/i,'1380',
-/Dan\s*Brown/i,'1390',
-/dawkins/i,'1400',
-/death\s*penalty/i,'1410',
-/Doomsday\s*clock/i,'1420',
-!/driverless/i,'1430', // let's not worry about this for now
-!/drone/i,'1440', //too common, probably not a great trigger anyway
-/Emmeline\s*Pankhurst/i,'1450',
-/Feminis[tm]/i,'1460',
-/fetlife/i,'1470',
-/(FF|Forever\s*Family)\s*Force/i,'1475',
-/frankie\s*boyle/i,'1480',
-/freedom\s*fight/i,'1490',
-/gentrif(y|ication)/i,'1510',
-/George\s*Orwell/i,'1520',
-/Germain\s*Greer/i,'1530',
-/\bGandhi\b/i,'1540',  // CampingandHiking :)  
-/Ghandi/i,'1541',  // common misspelling
-/global\s*warm/i,'1550',
-!/\b[^\057]god[^\057]\b/i,'1550', //offerings were made to the gods from the very earliest times
-/graffiti/i,'1560',
-/gromr/i,'1570',
-/Guildford\s*(pub\s*)?bomb/i,'1580',
-/Hilary\s*Clinton/i,'1590',
-/Hiroshima/i,'1595',
-/Hitler/i,'1600',
-/Homeland\s*Security/i,'1605',
-/I\s*am\s*charlie/i,'1610',
-/\bI[\s\.]*R[\s\.]*A[\.]*\b/,'1620',
-/iraq\s*war/i,'1630',
-/irish\s*free/i,'1640',
-/Isidore\s*of\s*madrid/i,'1650',
-/\bISIS\b/,'1660',
-/\bIslam/i,'1670', // Bislama, islamic
-/je\s*suis\s*Paris/i,'1680',
-/jehovah('|s)*\swit/i,'1690',
-/jerry\s*adams/i,'1700',
-/Jesuit/i,'1710',
-/jihad/i,'1720',
-/\bK[\s\.]*K[\s\.]*K[\.]*\b/,'1730',
-/Ku\s*Klux\s*Klan/,'1735',
-/lives\s*matter/i,'1740',
-/Londongrad/i,'1745',
-/Malcolm\s*X/i,'1750',
-/Martin\s*Luther/i,'1760',
-/matt\s*groeging/i,'1770',
-/\bMichael\s*Collins\b/i,'1780',
-/Michael\s*Moore/i,'1790',
-/mind\s*control/i,'1800',
-!/Mohamm*(a|e)d/i,'1810',  //too common
-/moon\s*(landing\s*)?denier/i,'1820',
-/Mormon/i,'1830',
-/mosque/i,'1840',
-/Muslim/i,'1850',
-/Nagasaki/i,'1855',
-/\bN[\s\.]*A[\s\.]*T[\s\.]*O[\.]*\b/,'1860',
-/\bNazi\b/i,'1870',
-/nigger/i,'1880',
-!/\bNike\b/,'1890',  //why did I have Nike
-/\bObama\b/i,'1900',
-/Pacifis[tm]/i,'1910',
-/\bPalestine\b/i,'1920',
-/papist/i,'1930',
-/peado/i,'1940',
-/\bP[\s\.]*E[\s\.]*T[\s\.]*A[\.]*\b/,'1950',
-/pinko/i,'1960',
-/political(ly|\s)*correct/i,'1970',
-/Pope\s*Francis/i,'1980',
-/Provisional\s*Irish\s*Republican\s*Army/i,'1990',
-/The Punisher/i,'2000',
-/race relation/i,'2005',
-/Racis[tm]/i,'2010',
-/radicalis/i,'2020',
-/russell\s*brand/i,'2030',
-/quaker(?!\s*(brand|oats))/i,'2040',  //if not followed by brand or oats, see slavery below
-/Saint\s*Isidore/i,'2050',
-/satanis[tm]/i,'2060',
-/scientolog(y|ist)/i,'2070',
-/Betty\s*Campbell/i,'2080',
+!dictionary.set(/\b1984\b/,'540');  !too many false positives
+dictionary.set(/Afghanistan/i,'550');
+dictionary.set(/Animal\s*farm/i,'560');
+dictionary.set(/anti-?theist/i,'563');
+dictionary.set(/\bA\.I\.\b/i,'565');
+dictionary.set(/Charlie\s*Hebdo/i,'580');
+dictionary.set(/flat\s*earth/i,'1000');
+dictionary.set(/(Northern|N\.)\s*Ireland/i,'1010');
+dictionary.set(/(scottish|welsh)\s*independance/i,'1020');
+dictionary.set(/activis[tm]/i,'1030');
+!problem too short: dictionary.set(/\bAI\b/,'1040');
+dictionary.set(/al[-\s]*Qaeda/i,'1050');
+dictionary.set(/alternative\s*medicine/i,'1060');
+dictionary.set(/Anarchis[tm]/i,'1070');
+dictionary.set(/(animal|climate|extinction)\s*rebellion/i,'1080');
+dictionary.set(/animal\s*rights/i,'1090');
+!dictionary.set(/\barian\b/i,'1100');  ! is arian really a problem?
+dictionary.set(/artificial\s*intelligence/i,'1110');
+dictionary.set(/axis\s*of\s*evil/i,'1120');
+dictionary.set(/Betty\s*Campbell/i,'1130');
+dictionary.set(/bin\s*laden/i,'1140');
+dictionary.set(/black\s*(power|panther|lives|face)/i,'1150');
+dictionary.set(/\bB[\s\.]*L[\s\.]*M\.*\b/,'1160');
+dictionary.set(/blyton/i,'1170');
+dictionary.set(/bombing/i,'1180');
+dictionary.set(/Boogaloo/i,'1190');
+dictionary.set(/British\s*empire/i,'1200');
+dictionary.set(/buddis[tm]/i,'1210');
+dictionary.set(/Bulletin\s*of\s*the\s*Atomic\s*Scientists/i,'1220');
+dictionary.set(/burqa/i,'1225');
+dictionary.set(/C[\s\.]*S[\s\.]*Lewis/i,'1230');
+dictionary.set(/caliphate/i,'1240');
+dictionary.set(/call\s*to\s*prayer/i,'1250');
+dictionary.set(/cancel\s*culture/i,'1260');
+dictionary.set(/capitalis[tm]/i,'1270');
+dictionary.set(/(Cards|crimes)\s*against\s*humanity/i,'1280');
+dictionary.set(/Chamberlain/i,'1290');
+dictionary.set(/Charlie\s*hebdo/i,'1300');
+dictionary.set(/chavs/i,'1310');
+!dictionary.set(/civil\s*war/i,'1320'); ! too non-specific
+dictionary.set(/colonialis[tm]/i,'1330');
+dictionary.set(/comm(ie|unis[tm])/i,'1340');
+dictionary.set(/creationis[tm]/i,'1350');
+dictionary.set(/da\s*vinci\s*code/i,'1360');
+dictionary.set(/daily\s*mail/i,'1370');
+dictionary.set(/dali\s*lama/i,'1380');
+dictionary.set(/Dan\s*Brown/i,'1390');
+dictionary.set(/dawkins/i,'1400');
+dictionary.set(/death\s*penalty/i,'1410');
+dictionary.set(/Doomsday\s*clock/i,'1420');
+!dictionary.set(/driverless/i,'1430'); ! let's not worry about this for now
+!dictionary.set(/drone/i,'1440'); !too common, probably not a great trigger anyway
+dictionary.set(/Emmeline\s*Pankhurst/i,'1450');
+dictionary.set(/Feminis[tm]/i,'1460');
+dictionary.set(/fetlife/i,'1470');
+dictionary.set(/(FF|Forever\s*Family)\s*Force/i,'1475');
+dictionary.set(/frankie\s*boyle/i,'1480');
+dictionary.set(/freedom\s*fight/i,'1490');
+dictionary.set(/gentrif(y|ication)/i,'1510');
+dictionary.set(/George\s*Orwell/i,'1520');
+dictionary.set(/Germain\s*Greer/i,'1530');
+dictionary.set(/\bGandhi\b/i,'1540');  ! CampingandHiking :)  
+dictionary.set(/Ghandi/i,'1541');  ! common misspelling
+dictionary.set(/global\s*warm/i,'1550');
+!dictionary.set(/\b[^\057]god[^\057]\b/i,'1550'); !offerings were made to the gods from the very earliest times
+dictionary.set(/graffiti/i,'1560');
+dictionary.set(/gromr/i,'1570');
+dictionary.set(/Guildford\s*(pub\s*)?bomb/i,'1580');
+dictionary.set(/Hilary\s*Clinton/i,'1590');
+dictionary.set(/Hiroshima/i,'1595');
+dictionary.set(/Hitler/i,'1600');
+dictionary.set(/Homeland\s*Security/i,'1605');
+dictionary.set(/I\s*am\s*charlie/i,'1610');
+dictionary.set(/\bI[\s\.]*R[\s\.]*A[\.]*\b/,'1620');
+dictionary.set(/iraq\s*war/i,'1630');
+dictionary.set(/irish\s*free/i,'1640');
+dictionary.set(/Isidore\s*of\s*madrid/i,'1650');
+dictionary.set(/\bISIS\b/,'1660');
+dictionary.set(/\bIslam/i,'1670'); ! Bislama, islamic
+dictionary.set(/je\s*suis\s*Paris/i,'1680');
+dictionary.set(/jehovah('|s)*\swit/i,'1690');
+dictionary.set(/jerry\s*adams/i,'1700');
+dictionary.set(/Jesuit/i,'1710');
+dictionary.set(/jihad/i,'1720');
+dictionary.set(/\bK[\s\.]*K[\s\.]*K[\.]*\b/,'1730');
+dictionary.set(/Ku\s*Klux\s*Klan/,'1735');
+dictionary.set(/lives\s*matter/i,'1740');
+dictionary.set(/Londongrad/i,'1745');
+dictionary.set(/Malcolm\s*X/i,'1750');
+dictionary.set(/Martin\s*Luther/i,'1760');
+dictionary.set(/matt\s*groeging/i,'1770');
+dictionary.set(/\bMichael\s*Collins\b/i,'1780');
+dictionary.set(/Michael\s*Moore/i,'1790');
+dictionary.set(/mind\s*control/i,'1800');
+!dictionary.set(/Mohamm*(a|e)d/i,'1810');  !too common
+dictionary.set(/moon\s*(landing\s*)?denier/i,'1820');
+dictionary.set(/Mormon/i,'1830');
+dictionary.set(/mosque/i,'1840');
+dictionary.set(/Muslim/i,'1850');
+dictionary.set(/Nagasaki/i,'1855');
+dictionary.set(/\bN[\s\.]*A[\s\.]*T[\s\.]*O[\.]*\b/,'1860');
+dictionary.set(/\bNazi\b/i,'1870');
+dictionary.set(/nigger/i,'1880');
+!dictionary.set(/\bNike\b/,'1890');  !why did I have Nike
+dictionary.set(/\bObama\b/i,'1900');
+dictionary.set(/Pacifis[tm]/i,'1910');
+dictionary.set(/\bPalestine\b/i,'1920');
+dictionary.set(/papist/i,'1930');
+dictionary.set(/peado/i,'1940');
+dictionary.set(/\bP[\s\.]*E[\s\.]*T[\s\.]*A[\.]*\b/,'1950');
+dictionary.set(/pinko/i,'1960');
+dictionary.set(/political(ly|\s)*correct/i,'1970');
+dictionary.set(/Pope\s*Francis/i,'1980');
+dictionary.set(/Provisional\s*Irish\s*Republican\s*Army/i,'1990');
+dictionary.set(/The Punisher/i,'2000');
+dictionary.set(/race relation/i,'2005');
+dictionary.set(/Racis[tm]/i,'2010');
+dictionary.set(/radicalis/i,'2020');
+dictionary.set(/russell\s*brand/i,'2030');
+dictionary.set(/quaker(?!\s*(brand|oats))/i,'2040');  !if not followed by brand or oats, see slavery below
+dictionary.set(/Saint\s*Isidore/i,'2050');
+dictionary.set(/satanis[tm]/i,'2060');
+dictionary.set(/scientolog(y|ist)/i,'2070');
+dictionary.set(/Betty\s*Campbell/i,'2080');
 
 !"slavery" was too common in other contexts, e.g.
 !"Working for food? And people says voluntary slavery doesn't exist"
@@ -142,29 +144,29 @@
 !that the spaces are inside the curved brackets and not following "slavery" otherwise 
 !"slavery\s\sstatement" would match as it is "slavery" followed by a single \s and then 
 !followed by \sstatement which is not strictly the same as followed by "statement".
-!/slavery(?!\s*(statement|act))/i,'2090',  
+!dictionary.set(/slavery(?!\s*(statement|act))/i,'2090');  
 
-/social\s*justice/i,'2100',
-/south\s*park/i,'2110',
-/stephen\s*king/i,'2120',
-/suffragette/i,'2130',
-/suicid(e|al)/i,'2140',
-/Taliban/i,'2245',
-/Terroris[tm]/i,'2150',
-/the\s*matrix/i,'2160',
-/the\s*simpsons/i,'2170',
-/tibet/i,'2180',
-/tony\s*blair/i,'2190',
-/\bTrump\b/i,'2200',
-/Twin towers/i,'2205',
-/\bU\.N\.\b/i,'2210',
-/under\s*one\s*banner/i,'2220',
-/united\s*nations/i,'2230',
-/\bVegan\b/i,'2240',
-/Vegetarian/i,'2250',
-/victim\s*generation/i,'2260',
-!/vigilante/i,'2270',  // maybe too general
-/warmonger/i,'2280',
-/Woke\s*movement/i,'2290',
-/World\s*war\s*(3|III)/i,'2300',
-/WW(3|III)/,'2310',
+dictionary.set(/social\s*justice/i,'2100');
+dictionary.set(/south\s*park/i,'2110');
+dictionary.set(/stephen\s*king/i,'2120');
+dictionary.set(/suffragette/i,'2130');
+dictionary.set(/suicid(e|al)/i,'2140');
+dictionary.set(/Taliban/i,'2245');
+dictionary.set(/Terroris[tm]/i,'2150');
+dictionary.set(/the\s*matrix/i,'2160');
+dictionary.set(/the\s*simpsons/i,'2170');
+dictionary.set(/tibet/i,'2180');
+dictionary.set(/tony\s*blair/i,'2190');
+dictionary.set(/\bTrump\b/i,'2200');
+dictionary.set(/Twin towers/i,'2205');
+dictionary.set(/\bU\.N\.\b/i,'2210');
+dictionary.set(/under\s*one\s*banner/i,'2220');
+dictionary.set(/united\s*nations/i,'2230');
+dictionary.set(/\bVegan\b/i,'2240');
+!dictionary.set(/Vegetarian/i,'2250'); !too common, and "doesn't have a problem" with vegetarians
+dictionary.set(/victim\s*generation/i,'2260');
+!dictionary.set(/vigilante/i,'2270');  ! maybe too general
+dictionary.set(/warmonger/i,'2280');
+dictionary.set(/Woke\s*movement/i,'2290');
+dictionary.set(/World\s*war\s*(3|III)/i,'2300');
+dictionary.set(/WW(3|III)/,'2310');
