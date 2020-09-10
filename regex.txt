@@ -1,15 +1,30 @@
 !
-  !This file contains a Map of trigger regexes that an individual might find offensive.
-!The number is an arbitary reference that allows the trigger to be refered to to a third party
-!without revealing the trigger itself.
-
+!This file contains a regexp list of words and phrases that an individual might find offensive.
+!It is not intended to upset anyone.  Exercise caution when reading.
+!
+!
+! Format:
+! A comma separated list.
+! Lines starting with a ! are comments and are ignored
+! (e.g. redundant triggers that you don't want to lose).
+! Blank lines are ignored.
+! Fields are assumed to be in the order: 
+!     trigger regexp, modifier, your reference (optional), your comment (optional)
+! Anything after the first 3 fields are ignored.
+! 'your reference' is a unique arbitary reference that allows the trigger to be refered
+! to to a third party without revealing the trigger itself.
+! See: https://www.w3schools.com/js/js_regexp.asp
+! A line with 'Version' as the first field is assumed to have some sort of arbitary
+! version number or phrase that you can use to check the correct version of the
+! trigger file has been loaded.
 
 !ASCII values
 !\057 	/ 	Solidus/Slash
 !\134 	\ 	Reverse solidus/Backslash
 
+Version,0.1
 
-!/\b1984\b,,'540',  !too many false positives
+!/\b1984\b,,'540',  too many false positives with this
 Afghanistan,i,'550',
 Animal\s*farm,i,'560',
 anti-?theist,i,'563',
