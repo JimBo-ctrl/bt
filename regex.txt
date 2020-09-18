@@ -47,9 +47,9 @@ Version,0.1
 
 !/\b1984\b,,'540',  too many false positives with this
 
-!Afghanistan,i,'550',
-!test,afghanistan,match
-!test,afghanista,fail
+Afghanistan,i,'550',
+test,afghanistan,match
+test,afghanista,fail
 
 Animal\s*farm,i,'560',
  test,animalfarm,match
