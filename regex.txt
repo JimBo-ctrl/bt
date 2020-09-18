@@ -49,6 +49,7 @@ Version,0.1
 
 Afghanistan,i,'550',
 test,afghanistan,match
+test,wrong afghanistan,fail, deliberately set wrong result
 test,afghanista,fail
 
 Animal\s*farm,i,'560',
@@ -59,3 +60,4 @@ TEST ,Animal     Farm,match
 anti-?theist,i,'563',
 test,anti-theist,match
 test,antitheist,match
+test,antitheist person,fail, deliberately set wrong result
