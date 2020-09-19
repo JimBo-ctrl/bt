@@ -43,7 +43,9 @@
 ! \057 	/ 	Solidus/Slash
 ! \134 	\ 	Reverse solidus/Backslash
 
-Version,0.2
+!-------------------
+Version,0.3
+!-------------------
 
 !/\b1984\b,,'540',  too many false positives with this
 
@@ -224,6 +226,85 @@ matt\s*groeging,i,'1770',
 Michael\s*Moore,i,'1790',
 mind\s*control,i,'1800',
 !Mohamm*(a|e)d,i,'1810',  too common
+
+moon\s*(landing\s*)?denier,i,'1820',
+test,moon denier,match
+test,moon landing denier,match
+
+Mormon,i,'1830',
+mosque,i,'1840',
+Muslim,i,'1850',
+Nagasaki,i,'1855',
+
+\bN[\s\.]*A[\s\.]*T[\s\.]*O[\.]*(?=(\s.*|$)),,'1860',
+\bNazi\b,i,'1870',
+nigger,i,'1880',
+(Northern|N\.)\s*Ireland,i,'1885',
+!\bNike\b,,'1890',  why did I have Nike
+\bObama\b,i,'1900',
+Pacifis[tm],i,'1910',
+\bPalestine\b,i,'1920',
+papist,i,'1930',
+peado,i,'1940',
+\bP[\s\.]*E[\s\.]*T[\s\.]*A[\.]*(?=(\s.*|$)),,'1950',
+pinko,i,'1960',
+political(ly|\s)*correct,i,'1970',
+Pope\s*Francis,i,'1980',
+
+(Provisional\s*)?Irish\s*Republican\s*Army,i,'1990',
+test,Provisional Irish Republican Army,match
+test,Irish Republican Army,match
+test,Provisional    Irish Republican Army,match
+
+The Punisher,i,'2000',
+race relation,i,'2005',
+Racis[tm],i,'2010',
+radicalis,i,'2020',
+russell\s*brand,i,'2030',
+quaker(?!\s*(brand|oats)),i,'2040',  if not followed by brand or oats,, see slavery below
+Saint\s*Isidore,i,'2050',
+satanis[tm],i,'2060',
+scientolog(y|ist),i,'2070',
+(scottish|welsh)\s*independance,i,'2075',
+
+!"slavery" was too common in other contexts,, e.g.
+!"Working for food? And people says voluntary slavery doesn't exist"
+!"content that includes themes of BDSM,, Slavery,, Rubber"
+!leaving it out for now,, could put in specific problematic occurences.
+
+!Match 'slavery' unless followed by optional white spaces and 'statement' or 'act' e.g. 
+!"modern slavery statement" which appears on several corporate sites. Its important 
+!that the spaces are inside the curved brackets and not following "slavery" otherwise 
+!"slavery\s\sstatement" would match as it is "slavery" followed by a single \s and then 
+!followed by \sstatement which is not strictly the same as followed by "statement".
+
+slavery(?!\s*(statement|act)),i,'2090',  
+
+social\s*justice,i,'2100',
+south\s*park,i,'2110',
+stephen\s*king,i,'2120',
+suffragette,i,'2130',
+suicid(e|al),i,'2140',
+Taliban,i,'2245',
+Terroris[tm],i,'2150',
+the\s*matrix,i,'2160',
+the\s*simpsons,i,'2170',
+tibet,i,'2180',
+tony\s*blair,i,'2190',
+\bTrump\b,i,'2200',
+Twin towers,i,'2205',
+\bU\.N\.(?=(\s.*|$)),i,'2210',
+
+under\s*one\s*banner,i,'2220',
+united\s*nations,i,'2230',
+\bVegan\b,i,'2240',
+!Vegetarian,i,'2250', !too common,, and "doesn't have a problem" with vegetarians
+victim\s*generation,i,'2260',
+!vigilante,i,'2270',  ! maybe too general
+warmonger,i,'2280',
+Woke\s*movement,i,'2290',
+World\s*war\s*(3|III),i,'2300',
+WW(3|III)/,,'2310',
 
 
 
