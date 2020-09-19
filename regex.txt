@@ -62,11 +62,20 @@ test,anti-theist,match
 test,antitheist,match
 !test,antitheist person,fail, deliberately set wrong result
 
-\bA\.I\.\b,i,'565',
+! matching A.I. was a bit of a pain, because it is so small and could be in
+! other acronyms I wanted it to be a whole word and expected \b at the
+! begining and end of the regex to work ie \bA\.I\.\b
+! This seemed the break down when A.I. was at the end of the string, so
+! I went with:
+\bA\.I\.(?=(\s.*|$)),,'565',
+! i.e. After A.I. it can be followed by EITHER a whitespace char followed by zero or more other chars, OR the end of string.
 test,A.I.,match
 test,xA.I.,fail
+test,x A.I.,match
 test,A.I.y,fail
+test,A.I. y,match
 test,xA.I.y,fail
+test,x A.I. y,match
 
 
 
