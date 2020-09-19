@@ -43,13 +43,13 @@
 ! \057 	/ 	Solidus/Slash
 ! \134 	\ 	Reverse solidus/Backslash
 
-Version,0.1
+Version,0.2
 
 !/\b1984\b,,'540',  too many false positives with this
 
 Afghanistan,i,'550',
 test,afghanistan,match
-test,wrong afghanistan,fail, deliberately set wrong result
+!test,wrong afghanistan,fail, deliberately set wrong result
 test,afghanista,fail
 
 Animal\s*farm,i,'560',
@@ -60,4 +60,14 @@ TEST ,Animal     Farm,match
 anti-?theist,i,'563',
 test,anti-theist,match
 test,antitheist,match
-test,antitheist person,fail, deliberately set wrong result
+!test,antitheist person,fail, deliberately set wrong result
+
+\bA\.I\.\b,i,'565',
+test,A.I.,match
+test,xA.I.,fail
+test,A.I.y,fail
+test,xA.I.y,fail
+
+
+
+
