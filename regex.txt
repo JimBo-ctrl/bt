@@ -76,6 +76,53 @@ test,A.I.y,fail
 test,A.I. y,match
 test,xA.I.y,fail
 test,x A.I. y,match
+!problem too short: \bAI\b/,,'1030',
+
+activis[tm],i,'1040',
+test,activist,match
+test,activism,match
+
+al[-\s]*Qaeda,i,'1050',
+test,al-Qaeda,match
+test,al - Qaeda,match
+test,alQaeda,match
+test,al Qaeda,match
+
+alternative\s*medicine,i,'1060',
+Anarchis[tm],i,'1070',
+
+(animal|climate|extinction)\s*rebellion,i,'1080',
+test,animal rebellion,match
+test,climate rebellion,match
+test,extinction rebellion,match
+
+animal\s*rights,i,'1090',
+!\barian\b,i,'1100',  // is arian really a problem?
+artificial\s*intelligence,i,'1110',
+axis\s*of\s*evil,i,'1120',
+Betty\s*Campbell,i,'1130',
+bin\s*laden,i,'1140',
+black\s*(power|panther|lives),i,'1150',
+
+black\s*face(?!.*sheep),i,'1155',  //unless followed by sheep
+test,blackface,match
+test, when I talk about blackface I mean sheep,fail
+
+\bB[\s\.]*L[\s\.]*M\.(?=(\s.*|$)),,'1160',
+test,B.L.M.,match
+test,xB.L.M.,fail
+test,x B.L.M.,match
+test,B.L.M.y,fail
+test,B.L.M. y,match
+test,xB.L.M.y,fail
+test,x B.L.M. y,match
+
+blyton,i,'1170',
+bombing,i,'1180',
+Boogaloo,i,'1190',
+British\s*empire,i,'1200',
+buddis[tm],i,'1210',
+
 
 
 
