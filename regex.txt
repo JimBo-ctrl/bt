@@ -47,6 +47,12 @@
 Version,0.3
 !-------------------
 
+! Test how regex that contains a comma behaves when held in this comma separated file.
+\d{3,4},,10, match 3 to 4 digits
+test,10,fail
+test,100,match
+test,1000,match
+
 !/\b1984\b,,'540',  too many false positives with this
 
 Afghanistan,i,'550',
