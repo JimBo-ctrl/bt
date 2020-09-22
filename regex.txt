@@ -17,12 +17,11 @@
 !         version of the trigger file has been loaded.
 !     2. Trigger definition:
 !         Fields are assumed to be in the order: 
-!             trigger regexp#modifier#your reference (optional)#your comment (optional)
-!         Anything after the first 3 fields is ignored.
+!             trigger regexp#modifier#your comment (optional)
+!         Anything after the first 2 fields is ignored.
 !         regexp is a regular expression, and modifier is a character that alters how the
 !         regexp behaves, See: https://www.w3schools.com/js/js_regexp.asp
-!         'your reference' is your own unique arbitary reference that allows the trigger to be refered
-!         to to a third party without revealing the trigger itself.
+!         The modifier can be blank, but the field must be present eg: regexp##
 !     3. Test definition:
 !          A line with 'Test' as the first field is assumed to have a test to ensure the definition and 
 !          operation of a regexp has been understood.  Fields are assumed to be in the order:
@@ -44,39 +43,38 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.5
+Version#0.6
 !-------------------
 
 ! Test how regex that contains a comma behaves when held in this hash separated file.
-!\d{3,4}##10# match 3 to 4 digits
-!test#10#fail
-!test#100#match
-!test#1000#match
+\d{3,4}##match 3 to 4 digits
+test#10#fail
+test#100#match
+test#1000#match
 
-!/\b1984\b##'540'#  too many false positives with this
+!/\b1984\b##too many false positives with this
 
-Afghanistan#i#'550'#
+Afghanistan#i#
 test#afghanistan#match
 !test#wrong afghanistan#fail# deliberately set wrong result
 test#afghanista#fail
 
-Animal\s*farm#i#'560'#
+Animal\s*farm#i#
  test#animalfarm#match
 TEST #Animal     Farm#match
   test   #Animal pig Farm#fail
 
-anti-?theist#i#'563'#
+anti-?theist#i#
 test#anti-theist#match
 test#antitheist#match
 !test#antitheist person#fail# deliberately set wrong result
-
 
 ! matching A.I. was a bit of a pain, because it is so small and could be in
 ! other acronyms I wanted it to be a whole word and expected \b at the
 ! begining and end of the regex to work ie \bA\.I\.\b
 ! This seemed the break down when A.I. was at the end of the string, so
 ! I went with:
-\bA\.I\.(?=(\s.*|$))##'565'#
+\bA\.I\.(?=(\s.*|$))##
 ! i.e. After A.I. it can be followed by EITHER a whitespace char followed by zero or more other chars, OR the end of string.
 test#A.I.#match
 test#xA.I.#fail
