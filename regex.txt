@@ -43,14 +43,14 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.6
+Version#0.7
 !-------------------
 
 ! Test how regex that contains a comma behaves when held in this hash separated file.
-\d{3,4}##match 3 to 4 digits
-test#10#fail
-test#100#match
-test#1000#match
+!\d{3,4}##match 3 to 4 digits
+!test#10#fail
+!test#100#match
+!test#1000#match
 
 !/\b1984\b##too many false positives with this
 
