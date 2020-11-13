@@ -43,7 +43,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.7
+Version#0.9
 !-------------------
 
 ! Test how regex that contains a comma behaves when held in this hash separated file.
@@ -59,6 +59,8 @@ test#afghanistan#match
 !test#wrong afghanistan#fail# deliberately set wrong result
 test#afghanista#fail
 
+All(a|ā)hu?\s*ʾ?akbar#i#
+
 Animal\s*farm#i#
  test#animalfarm#match
 TEST #Animal     Farm#match
@@ -68,6 +70,8 @@ anti-?theist#i#
 test#anti-theist#match
 test#antitheist#match
 !test#antitheist person#fail# deliberately set wrong result
+
+antifa#i#'1029'#
 
 ! matching A.I. was a bit of a pain, because it is so small and could be in
 ! other acronyms I wanted it to be a whole word and expected \b at the
@@ -83,7 +87,7 @@ test#A.I.y#fail
 test#A.I. y#match
 test#xA.I.y#fail
 test#x A.I. y#match
-!problem too short: \bAI\b##'1030'#
+!problem, too short: \bAI\b##'1030'#
 
 activis[tm]#i#'1040'#
 test#activist#match
@@ -179,6 +183,7 @@ global\s*warm#i#'1550'#
 !\b[^\057]god[^\057]\b#i#'1550'# offerings were made to the gods from the very earliest times
 graffiti#i#'1560'#
 gromr#i#'1570'#
+theguardian#i#'1575'#aimed at google search results
 Guildford\s*(pub\s*)?bomb#i#'1580'#
 Hilary\s*Clinton#i#'1590'#
 Hiroshima#i#'1595'#
@@ -225,12 +230,13 @@ test#K K K#match
 lives\s*matter#i#'1740'#
 Londongrad#i#'1745'#
 Malcolm\s*X#i#'1750'#
+marijuana#i#1755# Mike asked for this to be added
 Martin\s*Luther#i#'1760'#
 matt\s*groeging#i#'1770'#
 \bMichael\s*Collins\b#i#'1780'#
 Michael\s*Moore#i#'1790'#
 mind\s*control#i#'1800'#
-!Mohamm*(a|e)d#i#'1810'#  too common
+!M(o|u)ham+(a|e)d#i#'1810'#  too common
 
 moon\s*(landing\s*)?denier#i#'1820'#
 test#moon denier#match
@@ -261,6 +267,7 @@ test#Provisional Irish Republican Army#match
 test#Irish Republican Army#match
 test#Provisional    Irish Republican Army#match
 
+Proud Boys#i#'1999'#
 The Punisher#i#'2000'#
 race relation#i#'2005'#
 Racis[tm]#i#'2010'#
