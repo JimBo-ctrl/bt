@@ -43,7 +43,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.10
+Version#0.11
 !-------------------
 
 ! Test how regex that contains a comma behaves when held in this hash separated file.
@@ -292,14 +292,14 @@ scientolog(y|ist)#i#'2070'#
 
 slavery(?!\s*(statement|act))#i#'2090'#  
 
-social\s*justice#i#'2100'#
-south\s*park#i#'2110'#
-stephen\s*king#i#'2120'#
-suffragette#i#'2130'#
-suicid(e|al)#i#'2140'#
-Taliban#i#'2245'#
-Terroris[tm]#i#'2150'#
-the\s*matrix#i#'2160'#
+social\s*justice#i
+south\s*park#i
+stephen\s*king#i
+suffragette#i
+suicid(e|al)#i
+Taliban#i
+Terroris[tm]#i
+the\s*matrix#i
 the\s*simpsons#i#'2170'#
 tibet#i#'2180'#
 tony\s*blair#i#'2190'#
