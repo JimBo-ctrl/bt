@@ -119,7 +119,7 @@ black\s*face(?!.*sheep)#i# unless followed by sheep
 test#blackface#match
 test# when I talk about blackface I mean sheep#fail
 
-\bB[\s\.]*L[\s\.]*M\.(?=(\s.*|$))
+\bB[\s\.]*L[\s\.]*M\.(?=(\s.*|$))#
 test#B.L.M.#match
 test#xB.L.M.#fail
 test#x B.L.M.#match
