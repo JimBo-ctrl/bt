@@ -43,7 +43,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.9
+Version#0.10
 !-------------------
 
 ! Test how regex that contains a comma behaves when held in this hash separated file.
@@ -54,7 +54,7 @@ Version#0.9
 
 !/\b1984\b##too many false positives with this
 
-Afghanistan#i#
+Afghanistan#i
 test#afghanistan#match
 !test#wrong afghanistan#fail# deliberately set wrong result
 test#afghanista#fail
@@ -71,7 +71,7 @@ test#anti-theist#match
 test#antitheist#match
 !test#antitheist person#fail# deliberately set wrong result
 
-antifa#i#'1029'#
+antifa#i
 
 ! matching A.I. was a bit of a pain, because it is so small and could be in
 ! other acronyms I wanted it to be a whole word and expected \b at the
@@ -89,37 +89,37 @@ test#xA.I.y#fail
 test#x A.I. y#match
 !problem, too short: \bAI\b##'1030'#
 
-activis[tm]#i#'1040'#
+activis[tm]#i
 test#activist#match
 test#activism#match
 
-al[-\s]*Qaeda#i#'1050'#
+al[-\s]*Qaeda#i
 test#al-Qaeda#match
 test#al - Qaeda#match
 test#alQaeda#match
 test#al Qaeda#match
 
-alternative\s*medicine#i#'1060'#
-Anarchis[tm]#i#'1070'#
+alternative\s*medicine#i
+Anarchis[tm]#i
 
-(animal|climate|extinction)\s*rebellion#i#'1080'#
+(animal|climate|extinction)\s*rebellion#i
 test#animal rebellion#match
 test#climate rebellion#match
 test#extinction rebellion#match
 
-animal\s*rights#i#'1090'#
-!\barian\b#i#'1100'#   is arian really a problem?
-artificial\s*intelligence#i#'1110'#
-axis\s*of\s*evil#i#'1120'#
-Betty\s*Campbell#i#'1130'#
-bin\s*laden#i#'1140'#
-black\s*(power|panther|lives)#i#'1150'#
+animal\s*rights#i
+!\barian\b#i# is arian really a problem?
+artificial\s*intelligence#i
+axis\s*of\s*evil#i
+Betty\s*Campbell#i
+bin\s*laden#i
+black\s*(power|panther|lives)#i
 
-black\s*face(?!.*sheep)#i#'1155'#  unless followed by sheep
+black\s*face(?!.*sheep)#i# unless followed by sheep
 test#blackface#match
 test# when I talk about blackface I mean sheep#fail
 
-\bB[\s\.]*L[\s\.]*M\.(?=(\s.*|$))##'1160'#
+\bB[\s\.]*L[\s\.]*M\.(?=(\s.*|$))
 test#B.L.M.#match
 test#xB.L.M.#fail
 test#x B.L.M.#match
