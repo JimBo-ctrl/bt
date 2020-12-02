@@ -17,11 +17,15 @@
 !         version of the trigger file has been loaded.
 !     2. Trigger definition:
 !         Fields are assumed to be in the order: 
-!             trigger regexp#modifier#your comment (optional)
-!         Anything after the first 2 fields is ignored.
+!             trigger regexp#modifier#severity#your comment (optional)
+!         Anything after the first 3 fields is ignored.
 !         regexp is a regular expression, and modifier is a character that alters how the
 !         regexp behaves, See: https://www.w3schools.com/js/js_regexp.asp
 !         The modifier can be blank, but the field must be present eg: regexp##
+!         Severity is a measure of how significant the trigger is.  There are 2 values, "M" and "H" i.e.
+!         medium and high.  Medium triggers allows the user to continue and view the web page at their own
+!         discretion, high triggers are considered so significant that the user is prevented from going 
+!         any further.
 !     3. Test definition:
 !          A line with 'Test' as the first field is assumed to have a test to ensure the definition and 
 !          operation of a regexp has been understood.  Fields are assumed to be in the order:
@@ -43,7 +47,12 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.11
+Version#0.12
+
+! v0.12 added trigger severity level test entries
+
+BTtestm#i#M#
+BTtesth#i#H#
 !-------------------
 
 ! Test how regex that contains a comma behaves when held in this hash separated file.
@@ -54,7 +63,7 @@ Version#0.11
 
 !/\b1984\b##too many false positives with this
 
-Afghanistan#i
+Afghanistan#i#
 test#afghanistan#match
 !test#wrong afghanistan#fail# deliberately set wrong result
 test#afghanista#fail
