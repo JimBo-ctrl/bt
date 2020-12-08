@@ -47,10 +47,11 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.13
+Version#0.14
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
+! v0.14 climate change now high.
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -112,7 +113,7 @@ test#al Qaeda#match
 alternative\s*medicine#i
 Anarchis[tm]#i
 
-(animal|climate|extinction)\s*rebellion#i#H
+(animal|extinction)\s*rebellion#i#H
 test#animal rebellion#match
 test#climate rebellion#match
 test#extinction rebellion#match
@@ -157,6 +158,7 @@ Chamberlain#i#'1290'#
 Charlie\s*Hebdo#i#'1300'##H#
 chavs#i#'1310'#
 !civil\s*war#i#'1320'#  too non-specific
+climate\s*(change|rebellion)#i#H# 
 colonialis[tm]#i#'1330'#
 
 comm(ie|unis[tm])#i#'1340'#
