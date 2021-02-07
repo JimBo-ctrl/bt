@@ -52,6 +52,7 @@ Version#0.14
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
 ! v0.14 climate change now high.
+! v0.15 propaganda added, high
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -115,7 +116,6 @@ Anarchis[tm]#i
 
 (animal|extinction)\s*rebellion#i#H
 test#animal rebellion#match
-test#climate rebellion#match
 test#extinction rebellion#match
 
 animal\s*rights#i
@@ -274,6 +274,7 @@ peado#i#'1940'#
 pinko#i#'1960'#
 political(ly|\s)*correct#i#'1970'#
 Pope\s*Francis#i#'1980'#
+propaganda#i#H
 
 (Provisional\s*)?Irish\s*Republican\s*Army#i#'1990'#
 test#Provisional Irish Republican Army#match
