@@ -1,5 +1,6 @@
 ! WARNING
-! This file contains a regexp list of trigger words and phrases that an individual might find offensive.
+! This file contains a regexp list of trigger words and phrases that an individual might
+! find offensive.
 ! It is used to prevent web pages that contain these words and phases being shown to people
 ! who might be offended.
 ! It is not intended to upset anyone.  Exercise caution when reading.
@@ -47,12 +48,13 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.14
+Version#0.16
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
 ! v0.14 climate change now high.
 ! v0.15 propaganda added, high
+! v0.16 terrorism moved to high.
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -312,7 +314,7 @@ stephen\s*king#i#H#
 suffragette#i
 suicid(e|al)#i
 Taliban#i
-Terroris[tm]#i
+Terroris[tm]#i#H
 the\s*matrix#i
 the\s*simpsons#i#'2170'#
 tibet#i#'2180'#
