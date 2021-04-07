@@ -48,13 +48,14 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.16
+Version#0.17
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
 ! v0.14 climate change now high.
 ! v0.15 propaganda added, high
 ! v0.16 terrorism moved to high.
+! v0.17 scientology moved to high.
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -292,7 +293,7 @@ russell\s*brand#i#H#
 quaker(?!\s*(brand|oats))#i#'2040'#  if not followed by brand or oats, see slavery below
 Saint\s*Isidore#i#'2050'#
 satanis[tm]#i#'2060'#
-scientolog(y|ist)#i#'2070'#
+scientolog(y|ist)#i#H#
 (scottish|welsh)\s*independance#i#'2075'#
 
 !"slavery" was too common in other contexts, e.g.
