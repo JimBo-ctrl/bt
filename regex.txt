@@ -48,7 +48,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.17
+Version#0.18
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -56,6 +56,7 @@ Version#0.17
 ! v0.15 propaganda added, high
 ! v0.16 terrorism moved to high.
 ! v0.17 scientology moved to high.
+! v0.18 black panther allowed, not black panthers
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -128,7 +129,7 @@ axis\s*of\s*evil#i
 
 Betty\s*Campbell#i#H#
 bin\s*laden#i#H#
-black\s*(power|panther|lives)#i#H#
+black\s*(power|panthers|lives)#i#H#
 
 black\s*face(?!.*sheep)#i# unless followed by sheep
 test#blackface#match
