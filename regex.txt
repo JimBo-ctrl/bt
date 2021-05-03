@@ -48,7 +48,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.18
+Version#0.19
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -57,6 +57,7 @@ Version#0.18
 ! v0.16 terrorism moved to high.
 ! v0.17 scientology moved to high.
 ! v0.18 black panther allowed, not black panthers
+! v0.19 al-Fayed high
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -114,6 +115,12 @@ test#al-Qaeda#match
 test#al - Qaeda#match
 test#alQaeda#match
 test#al Qaeda#match
+
+al[-\s]*Fayed#i#H
+test#al-Fayed#match
+test#Al - Fayed#match
+test#alfayed#match
+test#al Fayed#match
 
 alternative\s*medicine#i
 Anarchis[tm]#i
