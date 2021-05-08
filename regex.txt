@@ -48,7 +48,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.19
+Version#0.20
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -58,6 +58,7 @@ Version#0.19
 ! v0.17 scientology moved to high.
 ! v0.18 black panther allowed, not black panthers
 ! v0.19 al-Fayed high
+! v0.20 Paedo.. high
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -280,7 +281,9 @@ nigger#i#'1880'#
 Pacifis[tm]#i#'1910'#
 \bPalestine\b#i#'1920'#
 papist#i#'1930'#
-peado#i#'1940'#
+peado#i#H
+paedo#i#H
+Pedophil#i#H
 \bP[\s\.]*E[\s\.]*T[\s\.]*A[\.]*(?=(\s.*|$))##'1950'#
 pinko#i#'1960'#
 political(ly|\s)*correct#i#'1970'#
