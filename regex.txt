@@ -48,7 +48,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.20
+Version#0.21
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -59,6 +59,7 @@ Version#0.20
 ! v0.18 black panther allowed, not black panthers
 ! v0.19 al-Fayed high
 ! v0.20 Paedo.. high
+! v0.21 Voltaire
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -341,6 +342,8 @@ united\s*nations#i#'2230'#
 !Vegetarian#i#'2250'# !too common## and "doesn't have a problem" with vegetarians
 victim\s*generation#i#'2260'#
 !vigilante#i#'2270'#  ! maybe too general
+Voltaire#i#
+note#i#
 warmonger#i#'2280'#
 Woke\s*movement#i#'2290'#
 World\s*war\s*(3|III)#i#'2300'#
