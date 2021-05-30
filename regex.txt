@@ -48,7 +48,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.21
+Version#0.22
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -60,6 +60,7 @@ Version#0.21
 ! v0.19 al-Fayed high
 ! v0.20 Paedo.. high
 ! v0.21 Voltaire
+! v0.22 Checked through hash separators
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -92,7 +93,7 @@ test#antitheist#match
 
 antifa#i
 
-! matching A.I. was a bit of a pain, because it is so small and could be in
+! matching A.I. was a bit of a pain, because 'AI' is so small and could be in
 ! other acronyms I wanted it to be a whole word and expected \b at the
 ! begining and end of the regex to work ie \bA\.I\.\b
 ! This seemed the break down when A.I. was at the end of the string, so
@@ -106,7 +107,6 @@ test#A.I.y#fail
 test#A.I. y#match
 test#xA.I.y#fail
 test#x A.I. y#match
-!problem, too short: \bAI\b##'1030'#
 
 activis[tm]#i
 test#activist#match
@@ -140,7 +140,7 @@ Betty\s*Campbell#i#H#
 bin\s*laden#i#H#
 black\s*(power|panthers|lives)#i#H#
 
-black\s*face(?!.*sheep)#i# unless followed by sheep
+black\s*face(?!.*sheep)#i##unless followed by sheep
 test#blackface#match
 test# when I talk about blackface I mean sheep#fail
 
@@ -159,65 +159,65 @@ Boogaloo#i##
 British\s*empire#i##
 buddis[tm]#i##
 
-Bulletin\s*of\s*the\s*Atomic\s*Scientists#i#'1220'##H#
-burqa#i#'1225'#
-C[\s\.]*S[\s\.]*Lewis#i#'1230'##H#
-caliphate#i#'1240'#
-call\s*to\s*prayer#i#'1250'#
-cancel\s*culture#i#'1260'#
-capitalis[tm]#i#'1270'#
-(Cards|crimes)\s*against\s*humanity#i#'1280'##H#
-Chamberlain#i#'1290'#
-Charlie\s*Hebdo#i#'1300'##H#
-chavs#i#'1310'#
-!civil\s*war#i#'1320'#  too non-specific
+Bulletin\s*of\s*the\s*Atomic\s*Scientists#i#H#
+burqa#i##
+C[\s\.]*S[\s\.]*Lewis#i#H#
+caliphate#i##
+call\s*to\s*prayer#i##
+cancel\s*culture#i##
+capitalis[tm]#i##
+(Cards|crimes)\s*against\s*humanity#i#H#
+Chamberlain#i##
+Charlie\s*Hebdo#i#H#
+chavs#i##
+!civil\s*war#i##too non-specific
 climate\s*(change|rebellion)#i#H# 
-colonialis[tm]#i#'1330'#
+colonialis[tm]#i##
 
-comm(ie|unis[tm])#i#'1340'#
+comm(ie|unis[tm])#i##
 test#commie#match
 test#communist#match
 test#communism#match
 
-creationis[tm]#i#'1350'#
-da\s*vinci\s*code#i#'1360'#
-daily\s*mail#i#'1370'#
-dali\s*lama#i#'1380'#
-Dan\s*Brown#i#'1390'##H#
-dawkins#i#'1400'##H#
-death\s*penalty#i#'1410'#
-Doomsday\s*clock#i#'1420'#
-!driverless#i#'1430'#  let's not worry about this for now
-!drone#i#'1440'# too common## probably not a great trigger anyway
-Emmeline\s*Pankhurst#i#'1450'##H#
-Feminis[tm]#i#'1460'#
-fetlife#i#'1470'#
-flat\s*earth#i#'1475'#
-(FF|Forever\s*Family)\s*Force#i#'1475'#
-frankie\s*boyle#i#'1480'#
-freedom\s*fight#i#'1490'#
-gentrif(y|ication)#i#'1510'#
-George\s*Orwell#i#'1520'##H#
-Germain\s*Greer#i#'1530'##H#
+creationis[tm]#i##
+da\s*vinci\s*code#i##
+daily\s*mail#i##
+dali\s*lama#i##
+Dan\s*Brown#i#H#
+dawkins#i#H#
+death\s*penalty#i##
+Doomsday\s*clock#i##
+!driverless#i##let's not worry about this for now
+!drone#i##too common, probably not a great trigger anyway
+Emmeline\s*Pankhurst#i#H#
+Feminis[tm]#i##
+fetlife#i##
+flat\s*earth#i##
+(FF|Forever\s*Family)\s*Force#i##
+frankie\s*boyle#i##
+freedom\s*fight#i##
+gentrif(y|ication)#i##
+George\s*Orwell#i#H#
+Germain\s*Greer#i#H#
 
-\bGandhi\b#i#H#  CampingandHiking :)  
+\bGandhi\b#i#H#note: CampingandHiking contains gandhi :)  
 test#CampingandHiking#fail
 test#Gandhi man#match
 
-\bGhandi#i#H#  common misspelling## longhandinline :)
-global\s*warm#i#'1550'#
-!\b[^\057]god[^\057]\b#i#'1550'# offerings were made to the gods from the very earliest times
-graffiti#i#'1560'#
-gromr#i#'1570'#
-theguardian#i#'1575'#aimed at google search results
-Guildford\s*(pub\s*)?bomb#i#'1580'#
-Hilary\s*Clinton#i#'1590'##H#
-Hiroshima#i#'1595'#
-Hitler#i#'1600'#
-Homeland\s*Security#i#'1605'#
-I\s*am\s*charlie#i#'1610'#
+\bGhandi#i#H#common misspelling longhandinline :)
+global\s*warm#i##
+!\b[^\057]god[^\057]\b#i##offerings were made to the gods from the very earliest times
+graffiti#i##
+gromr#i##
+theguardian#i##aimed at google search results
+Guildford\s*(pub\s*)?bomb#i##
+Hilary\s*Clinton#i#H#
+Hiroshima#i##
+Hitler#i##
+Homeland\s*Security#i##
+I\s*am\s*charlie#i##
 
-\bI[\s\.]*R[\s\.]*A[\.]*(?=(\s.*|$))##'1620'#
+\bI[\s\.]*R[\s\.]*A[\.]*(?=(\s.*|$))###
 test#I.R.A.#match
 test#xI.R.A.#fail
 test#x I.R.A.#match
@@ -234,19 +234,19 @@ test#IRA y#match
 test#xIRAy#fail
 test#x IRA y#match
 
-iraq\s*war#i#'1630'#
-irish\s*free#i#'1640'#
+iraq\s*war#i##
+irish\s*free#i##
 
-Isidore\s*of\s*madrid#i#'1650'#
-\bISIS\b##'1660'#
-\bIslam#i#'1670'#  Bislama## islamic
-je\s*suis\s*Paris#i#'1680'#
-jehovah('|s)*\swit#i#'1690'#
-jerry\s*adams#i#'1700'##H#
-Jesuit#i#'1710'#
-jihad#i#'1720'#
+Isidore\s*of\s*madrid#i##
+\bISIS\b###
+\bIslam#i##Bislama is a creole language
+je\s*suis\s*Paris#i##
+jehovah('|s)*\swit#i##
+jerry\s*adams#i#H#
+Jesuit#i##
+jihad#i##
 
-\bKu?[\s\.]*K(lux)?[\s\.]*K(lan)?[\.]*(?=(\s.*|$))##'1730'#
+\bKu?[\s\.]*K(lux)?[\s\.]*K(lan)?[\.]*(?=(\s.*|$))###
 test#KuKluxKlan#match
 test#KKK#match
 test#xKKK#fail
@@ -254,59 +254,59 @@ test#K.K.K.#match
 test#K K K#match
 
 lives\s*matter#i#H#
-Londongrad#i#'1745'#
+Londongrad#i##
 Malcolm\s*X#i#H#
-marijuana#i#1755# Mike asked for this to be added
+marijuana#i##Mike asked for this to be added
 Martin\s*Luther#i#H#
 matt\s*groeging#i#H#
 \bMichael\s*Collins\b#i#H#
 Michael\s*Moore#i#H#
-mind\s*control#i#'1800'#
-!M(o|u)ham+(a|e)d#i#'1810'#  too common
+mind\s*control#i##
+!M(o|u)ham+(a|e)d#i##too common
 
-moon\s*(landing\s*)?denier#i#'1820'#
+moon\s*(landing\s*)?denier#i##
 test#moon denier#match
 test#moon landing denier#match
 
-Mormon#i#'1830'#
-mosque#i#'1840'#
-Muslim#i#'1850'#
-Nagasaki#i#'1855'#
+Mormon#i##
+mosque#i##
+Muslim#i##
+Nagasaki#i##
 
-\bN[\s\.]*A[\s\.]*T[\s\.]*O[\.]*(?=(\s.*|$))##'1860'#
-\bNazi\b#i#'1870'#
-nigger#i#'1880'#
-(Northern|N\.)\s*Ireland#i#'1885'#
-!\bNike\b##'1890'#  why did I have Nike
+\bN[\s\.]*A[\s\.]*T[\s\.]*O[\.]*(?=(\s.*|$))###
+\bNazi\b#i##
+nigger#i##
+(Northern|N\.)\s*Ireland#i##
+!\bNike\b###why did I have Nike
 \bObama\b#i#H#
-Pacifis[tm]#i#'1910'#
-\bPalestine\b#i#'1920'#
-papist#i#'1930'#
+Pacifis[tm]#i##
+\bPalestine\b#i##
+papist#i##
 peado#i#H
 paedo#i#H
 Pedophil#i#H
-\bP[\s\.]*E[\s\.]*T[\s\.]*A[\.]*(?=(\s.*|$))##'1950'#
-pinko#i#'1960'#
-political(ly|\s)*correct#i#'1970'#
-Pope\s*Francis#i#'1980'#
+\bP[\s\.]*E[\s\.]*T[\s\.]*A[\.]*(?=(\s.*|$))###
+pinko#i##
+political(ly|\s)*correct#i##
+Pope\s*Francis#i##
 propaganda#i#H
 
-(Provisional\s*)?Irish\s*Republican\s*Army#i#'1990'#
+(Provisional\s*)?Irish\s*Republican\s*Army#i##
 test#Provisional Irish Republican Army#match
 test#Irish Republican Army#match
 test#Provisional    Irish Republican Army#match
 
-Proud Boys#i#'1999'#
-The Punisher#i#'2000'#
-race relation#i#'2005'#
-Racis[tm]#i#'2010'#
-radicalis#i#'2020'#
+Proud Boys#i##
+The Punisher#i##
+race relation#i##
+Racis[tm]#i##
+radicalis#i##
 russell\s*brand#i#H#
-quaker(?!\s*(brand|oats))#i#'2040'#  if not followed by brand or oats, see slavery below
-Saint\s*Isidore#i#'2050'#
-satanis[tm]#i#'2060'#
+quaker(?!\s*(brand|oats))#i##if not followed by brand or oats, see slavery below
+Saint\s*Isidore#i##
+satanis[tm]#i##
 scientolog(y|ist)#i#H#
-(scottish|welsh)\s*independance#i#'2075'#
+(scottish|welsh)\s*independance#i##
 
 !"slavery" was too common in other contexts, e.g.
 !"Working for food? And people says voluntary slavery doesn't exist"
@@ -319,7 +319,7 @@ scientolog(y|ist)#i#H#
 !"slavery\s\sstatement" would match as it is "slavery" followed by a single \s and then 
 !followed by \sstatement which is not strictly the same as followed by "statement".
 
-slavery(?!\s*(statement|act))#i#'2090'#  
+slavery(?!\s*(statement|act))#i##  
 
 social\s*justice#i
 south\s*park#i
@@ -329,19 +329,19 @@ suicid(e|al)#i
 Taliban#i
 Terroris[tm]#i#H
 the\s*matrix#i
-the\s*simpsons#i#'2170'#
-tibet#i#'2180'#
+the\s*simpsons#i##
+tibet#i##
 tony\s*blair#i#H#
 \bTrump\b#i#H#
-Twin towers#i#'2205'#
-\bU\.N\.(?=(\s.*|$))#i#'2210'#
+Twin towers#i##
+\bU\.N\.(?=(\s.*|$))#i##
 
 under\s*one\s*banner#i#H#
-united\s*nations#i#'2230'#
-\bVegan\b#i#'2240'#
-!Vegetarian#i#'2250'# !too common## and "doesn't have a problem" with vegetarians
-victim\s*generation#i#'2260'#
-!vigilante#i#'2270'#  ! maybe too general
+united\s*nations#i##
+\bVegan\b#i##
+!Vegetarian#i##too common and Mike "doesn't have a problem" with vegetarians
+victim\s*generation#i##
+!vigilante#i##maybe too general
 Voltaire#i#
 warmonger#i#
 Woke\s*movement#i#
