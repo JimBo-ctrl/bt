@@ -86,6 +86,7 @@ TEST #Animal     Farm#match
   test   #Animal pig Farm#fail
 
 anti-?theist#i#
+autistic#i#
 test#anti-theist#match
 test#antitheist#match
 !test#antitheist person#fail# deliberately set wrong result
@@ -343,9 +344,8 @@ united\s*nations#i#'2230'#
 victim\s*generation#i#'2260'#
 !vigilante#i#'2270'#  ! maybe too general
 Voltaire#i#
-note#i#
-warmonger#i#'2280'#
-Woke\s*movement#i#'2290'#
-World\s*war\s*(3|III)#i#'2300'#
-WW(3|III)/##'2310'#
+warmonger#i#
+Woke\s*movement#i#
+World\s*war\s*(3|III)#i#
+WW(3|III)/##
 
