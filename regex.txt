@@ -86,7 +86,6 @@ TEST #Animal     Farm#match
   test   #Animal pig Farm#fail
 
 anti-?theist#i#
-autistic#i#
 test#anti-theist#match
 test#antitheist#match
 !test#antitheist person#fail# deliberately set wrong result
@@ -154,11 +153,11 @@ test#B.L.M. y#match
 test#xB.L.M.y#fail
 test#x B.L.M. y#match
 
-blyton#i#'1170'##H#
-bombing#i#'1180'#
-Boogaloo#i#'1190'#
-British\s*empire#i#'1200'#
-buddis[tm]#i#'1210'#
+blyton#i#H#
+bombing#i##
+Boogaloo#i##
+British\s*empire#i##
+buddis[tm]#i##
 
 Bulletin\s*of\s*the\s*Atomic\s*Scientists#i#'1220'##H#
 burqa#i#'1225'#
