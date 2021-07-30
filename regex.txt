@@ -48,7 +48,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.22
+Version#0.23
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -61,6 +61,7 @@ Version#0.22
 ! v0.20 Paedo.. high
 ! v0.21 Voltaire
 ! v0.22 Checked through hash separators
+! v0.23 Influencer added, high
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -216,6 +217,8 @@ Hiroshima#i##
 Hitler#i##
 Homeland\s*Security#i##
 I\s*am\s*charlie#i##
+
+influencer#i#H#
 
 \bI[\s\.]*R[\s\.]*A[\.]*(?=(\s.*|$))###
 test#I.R.A.#match
