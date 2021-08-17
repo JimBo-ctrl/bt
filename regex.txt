@@ -48,7 +48,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.23
+Version#0.24
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -62,6 +62,7 @@ Version#0.23
 ! v0.21 Voltaire
 ! v0.22 Checked through hash separators
 ! v0.23 Influencer added, high
+! v0.24 Northern Independance added
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -279,6 +280,7 @@ Nagasaki#i##
 \bN[\s\.]*A[\s\.]*T[\s\.]*O[\.]*(?=(\s.*|$))###
 \bNazi\b#i##
 nigger#i##
+northern independ#i##
 (Northern|N\.)\s*Ireland#i##
 !\bNike\b###why did I have Nike
 \bObama\b#i#H#
