@@ -48,7 +48,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.24
+Version#0.25
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -63,6 +63,7 @@ Version#0.24
 ! v0.22 Checked through hash separators
 ! v0.23 Influencer added, high
 ! v0.24 Northern Independance added
+! v0.25 MP added after killing
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -274,6 +275,7 @@ test#moon landing denier#match
 
 Mormon#i##
 mosque#i##
+\bMP\b###
 Muslim#i##
 Nagasaki#i##
 
