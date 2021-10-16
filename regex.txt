@@ -48,7 +48,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.25
+Version#0.26
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -64,6 +64,7 @@ Version#0.25
 ! v0.23 Influencer added, high
 ! v0.24 Northern Independance added
 ! v0.25 MP added after killing
+! v0.26 Head Topics added MP killing, high - its an American news site
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -214,6 +215,9 @@ graffiti#i##
 gromr#i##
 theguardian#i##aimed at google search results
 Guildford\s*(pub\s*)?bomb#i##
+
+\bHead\s*Topics#i#H#
+
 Hilary\s*Clinton#i#H#
 Hiroshima#i##
 Hitler#i##
