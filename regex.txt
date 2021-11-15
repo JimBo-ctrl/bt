@@ -48,7 +48,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.26
+Version#0.27
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
