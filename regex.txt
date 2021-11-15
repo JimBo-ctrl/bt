@@ -65,6 +65,7 @@ Version#0.26
 ! v0.24 Northern Independance added
 ! v0.25 MP added after killing
 ! v0.26 Head Topics added MP killing, high - its an American news site
+! v0.27 suprised atheist/ism wasn't in there.
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -139,6 +140,11 @@ animal\s*rights#i
 !\barian\b#i# is arian really a problem?
 artificial\s*intelligence#i
 axis\s*of\s*evil#i
+
+atheis[tm]#i
+test#atheist#match
+test#atheism#match
+test#atheist_fur#match
 
 Betty\s*Campbell#i#H#
 bin\s*laden#i#H#
