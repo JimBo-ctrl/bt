@@ -48,7 +48,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.27
+Version#0.29
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -66,6 +66,8 @@ Version#0.27
 ! v0.25 MP added after killing
 ! v0.26 Head Topics added MP killing, high - its an American news site
 ! v0.27 suprised atheist/ism wasn't in there.
+! v0.28 white genocide
+! v0.29 Christopher Hitchens
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -190,6 +192,8 @@ test#communist#match
 test#communism#match
 
 creationis[tm]#i##
+Christopher\s*Hitchens#i#H#
+
 da\s*vinci\s*code#i##
 daily\s*mail#i##
 dali\s*lama#i##
@@ -361,6 +365,7 @@ victim\s*generation#i##
 !vigilante#i##maybe too general
 Voltaire#i#
 warmonger#i#
+white\s*genocide#i#
 Woke\s*movement#i#
 World\s*war\s*(3|III)#i#
 WW(3|III)/##
