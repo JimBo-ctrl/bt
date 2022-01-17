@@ -48,7 +48,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.29
+Version#0.30
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -68,6 +68,7 @@ Version#0.29
 ! v0.27 suprised atheist/ism wasn't in there.
 ! v0.28 white genocide
 ! v0.29 Christopher Hitchens
+! v0.30 George Floyd
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -211,6 +212,7 @@ flat\s*earth#i##
 frankie\s*boyle#i##
 freedom\s*fight#i##
 gentrif(y|ication)#i##
+George\s*Floyd#i#H#
 George\s*Orwell#i#H#
 Germain\s*Greer#i#H#
 
