@@ -48,7 +48,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.30
+Version#0.31
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -69,6 +69,7 @@ Version#0.30
 ! v0.28 white genocide
 ! v0.29 Christopher Hitchens
 ! v0.30 George Floyd
+! v0.31 Anthropocene and Kleptocene
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -93,6 +94,8 @@ Animal\s*farm#i#
  test#animalfarm#match
 TEST #Animal     Farm#match
   test   #Animal pig Farm#fail
+
+Anthropocene#i#
 
 anti-?theist#i#
 test#anti-theist#match
@@ -266,6 +269,8 @@ jehovah('|s)*\swit#i##
 jerry\s*adams#i#H#
 Jesuit#i##
 jihad#i##
+
+Kleptocene#i#H
 
 \bKu?[\s\.]*K(lux)?[\s\.]*K(lan)?[\.]*(?=(\s.*|$))###
 test#KuKluxKlan#match
