@@ -48,7 +48,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.31
+Version#0.32
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -70,6 +70,8 @@ Version#0.31
 ! v0.29 Christopher Hitchens
 ! v0.30 George Floyd
 ! v0.31 Anthropocene and Kleptocene
+! v0.32 9/11 terms
+
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -82,6 +84,9 @@ Version#0.31
 !test#1000#match
 
 !/\b1984\b##too many false positives with this
+
+9/11#i#H
+test#xx 9/11 xx#match
 
 Afghanistan#i#
 test#afghanistan#match
@@ -194,6 +199,8 @@ comm(ie|unis[tm])#i##
 test#commie#match
 test#communist#match
 test#communism#match
+
+conspiracy\s*theor#i#
 
 creationis[tm]#i##
 Christopher\s*Hitchens#i#H#
@@ -361,6 +368,11 @@ the\s*simpsons#i##
 tibet#i##
 tony\s*blair#i#H#
 \bTrump\b#i#H#
+
+Trade\s*Cent[er|re]#i#
+test#Trade Center#match
+test#Trade Centre#match
+
 Twin towers#i##
 \bU\.N\.(?=(\s.*|$))#i##
 
