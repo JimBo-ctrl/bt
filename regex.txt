@@ -48,7 +48,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.32
+Version#0.33
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -71,6 +71,8 @@ Version#0.32
 ! v0.30 George Floyd
 ! v0.31 Anthropocene and Kleptocene
 ! v0.32 9/11 terms
+! v0.33 Russian Ukraine war Russia Ukraine Putin Crimea
+
 
 
 !BTtestm#i#M#
@@ -203,6 +205,7 @@ test#communism#match
 conspiracy\s*theor#i#
 
 creationis[tm]#i##
+Crimea#i#H#
 Christopher\s*Hitchens#i#H#
 
 da\s*vinci\s*code#i##
@@ -333,6 +336,9 @@ test#Provisional    Irish Republican Army#match
 
 Proud Boys#i##
 The Punisher#i##
+\bPutin\b#i#H#
+
+Russian?#i#H#
 race relation#i##
 Racis[tm]#i##
 radicalis#i##
@@ -376,6 +382,7 @@ test#Trade Centre#match
 Twin towers#i##
 \bU\.N\.(?=(\s.*|$))#i##
 
+Ukrain[[e|ian]#i#H#
 under\s*one\s*banner#i#H#
 united\s*nations#i##
 \bVegan\b#i##
