@@ -48,7 +48,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.33
+Version#0.34
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -72,7 +72,7 @@ Version#0.33
 ! v0.31 Anthropocene and Kleptocene
 ! v0.32 9/11 terms
 ! v0.33 Russian Ukraine war Russia Ukraine Putin Crimea
-
+! v0.34 Mary review what should be 'high'
 
 
 !BTtestm#i#M#
@@ -90,21 +90,21 @@ Version#0.33
 9/11#i#H
 test#xx 9/11 xx#match
 
-Afghanistan#i#
+Afghanistan#i#H
 test#afghanistan#match
 !test#wrong afghanistan#fail# deliberately set wrong result
 test#afghanista#fail
 
 All(a|ā)hu?\s*ʾ?akbar#i#
 
-Animal\s*farm#i#
+Animal\s*farm#i#H
  test#animalfarm#match
 TEST #Animal     Farm#match
   test   #Animal pig Farm#fail
 
 Anthropocene#i#
 
-anti-?theist#i#
+anti-?theist#i#H
 test#anti-theist#match
 test#antitheist#match
 !test#antitheist person#fail# deliberately set wrong result
@@ -126,11 +126,11 @@ test#A.I. y#match
 test#xA.I.y#fail
 test#x A.I. y#match
 
-activis[tm]#i
+activis[tm]#i#H
 test#activist#match
 test#activism#match
 
-al[-\s]*Qaeda#i
+al[-\s]*Qaeda#i#H
 test#al-Qaeda#match
 test#al - Qaeda#match
 test#alQaeda#match
@@ -143,18 +143,18 @@ test#alfayed#match
 test#al Fayed#match
 
 alternative\s*medicine#i
-Anarchis[tm]#i
+Anarchis[tm]#i#H
 
 (animal|extinction)\s*rebellion#i#H
 test#animal rebellion#match
 test#extinction rebellion#match
 
-animal\s*rights#i
+animal\s*rights#i#H
 !\barian\b#i# is arian really a problem?
 artificial\s*intelligence#i
-axis\s*of\s*evil#i
+axis\s*of\s*evil#i#H
 
-atheis[tm]#i
+atheis[tm]#i#H
 test#atheist#match
 test#atheism#match
 test#atheist_fur#match
@@ -178,16 +178,16 @@ test#x B.L.M. y#match
 
 blyton#i#H#
 bombing#i##
-Boogaloo#i##
+Boogaloo#i#H#
 British\s*empire#i##
 buddis[tm]#i##
 
 Bulletin\s*of\s*the\s*Atomic\s*Scientists#i#H#
-burqa#i##
+burqa#i#H#
 C[\s\.]*S[\s\.]*Lewis#i#H#
-caliphate#i##
+caliphate#i#H#
 call\s*to\s*prayer#i##
-cancel\s*culture#i##
+cancel\s*culture#i#H#
 capitalis[tm]#i##
 (Cards|crimes)\s*against\s*humanity#i#H#
 Chamberlain#i##
@@ -202,13 +202,13 @@ test#commie#match
 test#communist#match
 test#communism#match
 
-conspiracy\s*theor#i#
+conspiracy\s*theor#i#H
 
 creationis[tm]#i##
 Crimea#i#H#
 Christopher\s*Hitchens#i#H#
 
-da\s*vinci\s*code#i##
+da\s*vinci\s*code#i#H#
 daily\s*mail#i##
 dali\s*lama#i##
 Dan\s*Brown#i#H#
@@ -218,7 +218,7 @@ Doomsday\s*clock#i##
 !driverless#i##let's not worry about this for now
 !drone#i##too common, probably not a great trigger anyway
 Emmeline\s*Pankhurst#i#H#
-Feminis[tm]#i##
+Feminis[tm]#i#H#
 fetlife#i##
 flat\s*earth#i##
 (FF|Forever\s*Family)\s*Force#i##
@@ -238,8 +238,8 @@ global\s*warm#i##
 !\b[^\057]god[^\057]\b#i##offerings were made to the gods from the very earliest times
 graffiti#i##
 gromr#i##
-theguardian#i##aimed at google search results
-Guildford\s*(pub\s*)?bomb#i##
+theguardian#i#H#aimed at google search results
+Guildford\s*(pub\s*)?bomb#i#H#
 
 \bHead\s*Topics#i#H#
 
@@ -247,11 +247,11 @@ Hilary\s*Clinton#i#H#
 Hiroshima#i##
 Hitler#i##
 Homeland\s*Security#i##
-I\s*am\s*charlie#i##
+I\s*am\s*charlie#i#H#
 
 influencer#i#H#
 
-\bI[\s\.]*R[\s\.]*A[\.]*(?=(\s.*|$))###
+\bI[\s\.]*R[\s\.]*A[\.]*(?=(\s.*|$))##H#
 test#I.R.A.#match
 test#xI.R.A.#fail
 test#x I.R.A.#match
@@ -269,20 +269,20 @@ test#xIRAy#fail
 test#x IRA y#match
 
 iraq\s*war#i##
-irish\s*free#i##
+irish\s*free#i#H#
 
 Isidore\s*of\s*madrid#i##
-\bISIS\b###
+\bISIS\b##H#
 \bIslam#i##Bislama is a creole language
-je\s*suis\s*Paris#i##
+je\s*suis\s*Paris#i#H#
 jehovah('|s)*\swit#i##
 jerry\s*adams#i#H#
 Jesuit#i##
-jihad#i##
+jihad#i#H#
 
 Kleptocene#i#H
 
-\bKu?[\s\.]*K(lux)?[\s\.]*K(lan)?[\.]*(?=(\s.*|$))###
+\bKu?[\s\.]*K(lux)?[\s\.]*K(lan)?[\.]*(?=(\s.*|$))##H#
 test#KuKluxKlan#match
 test#KKK#match
 test#xKKK#fail
@@ -294,7 +294,7 @@ Londongrad#i##
 Malcolm\s*X#i#H#
 marijuana#i##Mike asked for this to be added
 Martin\s*Luther#i#H#
-matt\s*groeging#i#H#
+matt\s*groe[G|N]ing#i#H#SPELT WITH N REALLY
 \bMichael\s*Collins\b#i#H#
 Michael\s*Moore#i#H#
 mind\s*control#i##
@@ -305,31 +305,32 @@ test#moon denier#match
 test#moon landing denier#match
 
 Mormon#i##
-mosque#i##
+mosque#i#H#
 \bMP\b###
-Muslim#i##
+Muslim#i#H#
 Nagasaki#i##
 
 \bN[\s\.]*A[\s\.]*T[\s\.]*O[\.]*(?=(\s.*|$))###
 \bNazi\b#i##
-nigger#i##
+nigger#i#H#
 northern independ#i##
 (Northern|N\.)\s*Ireland#i##
 !\bNike\b###why did I have Nike
 \bObama\b#i#H#
-Pacifis[tm]#i##
-\bPalestine\b#i##
+Pacifis[tm]#i#H#
+\bPalestine\b#i#H#
 papist#i##
 peado#i#H
 paedo#i#H
+\bpedo\b#i#H
 Pedophil#i#H
-\bP[\s\.]*E[\s\.]*T[\s\.]*A[\.]*(?=(\s.*|$))###
+\bP[\s\.]*E[\s\.]*T[\s\.]*A[\.]*(?=(\s.*|$))##H#
 pinko#i##
 political(ly|\s)*correct#i##
 Pope\s*Francis#i##
 propaganda#i#H
 
-(Provisional\s*)?Irish\s*Republican\s*Army#i##
+(Provisional\s*)?Irish\s*Republican\s*Army#i#H#
 test#Provisional Irish Republican Army#match
 test#Irish Republican Army#match
 test#Provisional    Irish Republican Army#match
@@ -347,7 +348,7 @@ quaker(?!\s*(brand|oats))#i##if not followed by brand or oats, see slavery below
 Saint\s*Isidore#i##
 satanis[tm]#i##
 scientolog(y|ist)#i#H#
-(scottish|welsh)\s*independance#i##
+(scottish|welsh)\s*independance#i#H#
 
 !"slavery" was too common in other contexts, e.g.
 !"Working for food? And people says voluntary slavery doesn't exist"
@@ -363,11 +364,11 @@ scientolog(y|ist)#i#H#
 slavery(?!\s*(statement|act))#i##  
 
 social\s*justice#i
-south\s*park#i
+south\s*park#i#H
 stephen\s*king#i#H#
-suffragette#i
+suffragette#i#H
 suicid(e|al)#i
-Taliban#i
+Taliban#i#H
 Terroris[tm]#i#H
 the\s*matrix#i
 the\s*simpsons#i##
@@ -375,11 +376,11 @@ tibet#i##
 tony\s*blair#i#H#
 \bTrump\b#i#H#
 
-Trade\s*Cent[er|re]#i#
+Trade\s*Cent[er|re]#i#H
 test#Trade Center#match
 test#Trade Centre#match
 
-Twin towers#i##
+Twin towers#i#H#
 \bU\.N\.(?=(\s.*|$))#i##
 
 Ukrain[[e|ian]#i#H#
@@ -390,9 +391,9 @@ united\s*nations#i##
 victim\s*generation#i##
 !vigilante#i##maybe too general
 Voltaire#i#
-warmonger#i#
-white\s*genocide#i#
-Woke\s*movement#i#
-World\s*war\s*(3|III)#i#
-WW(3|III)/##
+warmonger#i#H
+white\s*genocide#i#H
+Woke\s*movement#i#H
+World\s*war\s*(3|III)#i#H
+WW(3|III)/##H
 
