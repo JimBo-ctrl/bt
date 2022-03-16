@@ -48,7 +48,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.34
+Version#0.35
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -73,7 +73,7 @@ Version#0.34
 ! v0.32 9/11 terms
 ! v0.33 Russian Ukraine war Russia Ukraine Putin Crimea
 ! v0.34 Mary review what should be 'high'
-
+! v0.35 Remove CSLewis
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -184,7 +184,7 @@ buddis[tm]#i##
 
 Bulletin\s*of\s*the\s*Atomic\s*Scientists#i#H#
 burqa#i#H#
-C[\s\.]*S[\s\.]*Lewis#i#H#
+!C[\s\.]*S[\s\.]*Lewis#i#H#Mike says never been a problem
 caliphate#i#H#
 call\s*to\s*prayer#i##
 cancel\s*culture#i#H#
