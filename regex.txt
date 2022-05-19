@@ -48,7 +48,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.35
+Version#0.36
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -74,6 +74,7 @@ Version#0.35
 ! v0.33 Russian Ukraine war Russia Ukraine Putin Crimea
 ! v0.34 Mary review what should be 'high'
 ! v0.35 Remove CSLewis
+! v0.36 \b before paedo
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -320,8 +321,8 @@ northern independ#i##
 Pacifis[tm]#i#H#
 \bPalestine\b#i#H#
 papist#i##
-peado#i#H
-paedo#i#H
+\bpeado#i#H
+\bpaedo#i#H#have seen this embedded in a surname hence the \b
 \bpedo\b#i#H
 Pedophil#i#H
 \bP[\s\.]*E[\s\.]*T[\s\.]*A[\.]*(?=(\s.*|$))##H#
