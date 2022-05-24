@@ -48,7 +48,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.36
+Version#0.37
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -75,6 +75,7 @@ Version#0.36
 ! v0.34 Mary review what should be 'high'
 ! v0.35 Remove CSLewis
 ! v0.36 \b before paedo
+! v0.37 extremist
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -219,6 +220,7 @@ Doomsday\s*clock#i##
 !driverless#i##let's not worry about this for now
 !drone#i##too common, probably not a great trigger anyway
 Emmeline\s*Pankhurst#i#H#
+extremist#i#H#
 Feminis[tm]#i#H#
 fetlife#i##
 flat\s*earth#i##
