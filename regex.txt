@@ -48,7 +48,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.37
+Version#0.38
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -76,6 +76,7 @@ Version#0.37
 ! v0.35 Remove CSLewis
 ! v0.36 \b before paedo
 ! v0.37 extremist
+! v0.38 V for Vendetta
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -390,6 +391,7 @@ Ukrain[[e|ian]#i#H#
 under\s*one\s*banner#i#H#
 united\s*nations#i##
 \bVegan\b#i##
+V\s*for\s*Vendetta#i#H#
 !Vegetarian#i##too common and Mike "doesn't have a problem" with vegetarians
 victim\s*generation#i##
 !vigilante#i##maybe too general
