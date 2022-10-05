@@ -48,7 +48,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.40
+Version#0.41
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -79,6 +79,7 @@ Version#0.40
 ! v0.38 V for Vendetta
 ! v0.39 Iran
 ! v0.40 Iran Iranian
+! v0.41 allow influencer
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -255,7 +256,7 @@ Hitler#i##
 Homeland\s*Security#i##
 I\s*am\s*charlie#i#H#
 
-influencer#i#H#
+!influencer#i#H#
 
 \bI[\s\.]*R[\s\.]*A[\.]*(?=(\s.*|$))##H#
 test#I.R.A.#match
