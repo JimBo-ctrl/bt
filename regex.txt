@@ -48,7 +48,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.41
+Version#0.42
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -80,6 +80,7 @@ Version#0.41
 ! v0.39 Iran
 ! v0.40 Iran Iranian
 ! v0.41 allow influencer
+! v0.42 reduce russian priority
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -347,7 +348,7 @@ Proud Boys#i##
 The Punisher#i##
 \bPutin\b#i#H#
 
-Russian?#i#H#
+Russian?#i##
 race relation#i##
 Racis[tm]#i##
 radicalis#i##
