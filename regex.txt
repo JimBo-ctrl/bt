@@ -48,7 +48,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.42
+Version#0.43
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -81,6 +81,7 @@ Version#0.42
 ! v0.40 Iran Iranian
 ! v0.41 allow influencer
 ! v0.42 reduce russian priority
+! v0.43 minneapolis
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -303,11 +304,12 @@ Londongrad#i##
 Malcolm\s*X#i#H#
 marijuana#i##Mike asked for this to be added
 Martin\s*Luther#i#H#
-matt\s*groe[G|N]ing#i#H#SPELT WITH N REALLY
+matt\s*groe[G|N]ing#i#H#Spelt with N really
 \bMichael\s*Collins\b#i#H#
 Michael\s*Moore#i#H#
 mind\s*control#i##
-!M(o|u)ham+(a|e)d#i##too common
+minneapolis#i#H#
+!M(o|u)ham+(a|e)d#i##too common a name
 
 moon\s*(landing\s*)?denier#i##
 test#moon denier#match
