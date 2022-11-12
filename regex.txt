@@ -48,7 +48,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.43
+Version#0.44
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -82,6 +82,7 @@ Version#0.43
 ! v0.41 allow influencer
 ! v0.42 reduce russian priority
 ! v0.43 minneapolis
+! v0.44 remove minneapolis
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -308,7 +309,7 @@ matt\s*groe[G|N]ing#i#H#Spelt with N really
 \bMichael\s*Collins\b#i#H#
 Michael\s*Moore#i#H#
 mind\s*control#i##
-minneapolis#i#H#
+!minneapolis#i#H#thinking about it
 !M(o|u)ham+(a|e)d#i##too common a name
 
 moon\s*(landing\s*)?denier#i##
