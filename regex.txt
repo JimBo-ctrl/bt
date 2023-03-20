@@ -136,11 +136,14 @@ test#A.I. y#match
 test#xA.I.y#fail
 test#x A.I. y#match
 
+Artificial\sIntelligence#i#H
+
 ! AI Art has caused specific problems for Mike.  I've made it
 ! case insensitive for now as is a longer string than just AI.
-\bAI\sArt(?=(\s.*|$))#i#H
+\bAI\s(Art|Image)(?=(\s.*|$))#i#H
 test#AI Art#match
 test#ai art#match
+test#ai image#match
 
 activis[tm]#i#H
 test#activist#match
