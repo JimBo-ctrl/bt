@@ -48,7 +48,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.44
+Version#0.45
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -83,6 +83,7 @@ Version#0.44
 ! v0.42 reduce russian priority
 ! v0.43 minneapolis
 ! v0.44 remove minneapolis
+! v0.45 AI and AI art
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -134,6 +135,12 @@ test#A.I.y#fail
 test#A.I. y#match
 test#xA.I.y#fail
 test#x A.I. y#match
+
+! AI Art has caused specific problems for Mike.  I've made it
+! case insensitive for now as is a longer string than just AI.
+\bAI\sArt(?=(\s.*|$))#i#H
+test#AI Art#match
+test#ai art#match
 
 activis[tm]#i#H
 test#activist#match
