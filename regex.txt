@@ -48,7 +48,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.45
+Version#0.46
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -84,6 +84,7 @@ Version#0.45
 ! v0.43 minneapolis
 ! v0.44 remove minneapolis
 ! v0.45 AI and AI art
+! v0.46 animal rising
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -164,11 +165,13 @@ test#al Fayed#match
 alternative\s*medicine#i
 Anarchis[tm]#i#H
 
-(animal|extinction)\s*rebellion#i#H
-test#animal rebellion#match
+extinction\s*rebellion#i#H
 test#extinction rebellion#match
 
-animal\s*rights#i#H
+animal\s*(rights|rising|rebellion)#i#H
+test#animal rebellion#match
+test#animal rising#match
+
 !\barian\b#i# is arian really a problem?
 artificial\s*intelligence#i
 axis\s*of\s*evil#i#H
