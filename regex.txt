@@ -48,7 +48,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.46
+Version#0.47
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -85,6 +85,7 @@ Version#0.46
 ! v0.44 remove minneapolis
 ! v0.45 AI and AI art
 ! v0.46 animal rising
+! v0.47 cannabis, fix Ukraine regex
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -209,6 +210,7 @@ burqa#i#H#
 !C[\s\.]*S[\s\.]*Lewis#i#H#Mike says never been a problem
 caliphate#i#H#
 call\s*to\s*prayer#i##
+cannabis#i##
 cancel\s*culture#i#H#
 capitalis[tm]#i##
 (Cards|crimes)\s*against\s*humanity#i#H#
@@ -408,7 +410,8 @@ test#Trade Centre#match
 Twin towers#i#H#
 \bU\.N\.(?=(\s.*|$))#i##
 
-Ukrain[[e|ian]#i#H#
+Ukrain[e|ian]#i#H#
+test#ukraine#match
 under\s*one\s*banner#i#H#
 united\s*nations#i##
 \bVegan\b#i##
