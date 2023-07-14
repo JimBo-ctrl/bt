@@ -48,7 +48,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.47
+Version#0.48
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -85,7 +85,8 @@ Version#0.47
 ! v0.44 remove minneapolis
 ! v0.45 AI and AI art
 ! v0.46 animal rising
-! v0.47 cannabis, fix Ukraine regex
+! v0.47 8/7/23 cannabis, fix Ukraine regex
+! v0.48 14/7/23 add '*deliberate error' to test error handling when storing regexps.
 
 !BTtestm#i#M#
 !BTtesth#i#H#
