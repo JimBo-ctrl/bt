@@ -48,7 +48,7 @@
 ! \134 	\ 	Reverse solidus/Backslash
 
 !-------------------
-Version#0.48
+Version#0.49
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -87,6 +87,7 @@ Version#0.48
 ! v0.46 animal rising
 ! v0.47 8/7/23 cannabis, fix Ukraine regex
 ! v0.48 14/7/23 add '*deliberate error' to test error handling when storing regexps.
+! v0.49 14/7/23 removed deliberate error.
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -239,7 +240,7 @@ dali\s*lama#i##
 Dan\s*Brown#i#H#
 dawkins#i#H#
 death\s*penalty#i##
-*deliberate error#i##
+!*deliberate error#i##
 Doomsday\s*clock#i##
 !driverless#i##let's not worry about this for now
 !drone#i##too common, probably not a great trigger anyway
