@@ -239,6 +239,7 @@ dali\s*lama#i##
 Dan\s*Brown#i#H#
 dawkins#i#H#
 death\s*penalty#i##
+*deliberate error#i##
 Doomsday\s*clock#i##
 !driverless#i##let's not worry about this for now
 !drone#i##too common, probably not a great trigger anyway
