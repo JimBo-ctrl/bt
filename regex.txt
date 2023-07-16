@@ -1,10 +1,12 @@
-! WARNING
+! ***********WARNING***********************************************************************
 ! This file contains a regexp list of trigger words and phrases that an individual might
 ! find offensive.
 ! It is used to prevent web pages that contain these words and phases being shown to people
 ! who might be offended.
 ! It is not intended to upset anyone.  Exercise caution when reading.
+! *****************************************************************************************
 !
+! I find https://regexr.com/ to be a useful site for creating and testing regular expressions.
 !
 ! Format:
 ! A hash (#) separated list.
@@ -43,12 +45,15 @@
 !         A regexp can have multiple tests.
 
 
-! ASCII values (info only)
-! \057 	/ 	Solidus/Slash
-! \134 	\ 	Reverse solidus/Backslash
+! Notes.
+! ASCII  Char   Name
+! -----  ----   ----
+! \057 	 / 	Solidus/Slash
+! \134 	 \ 	Reverse solidus/Backslash
 
-!-------------------
-Version#0.49
+!--------------------------------------------------
+
+Version#0.50
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -88,6 +93,7 @@ Version#0.49
 ! v0.47 8/7/23 cannabis, fix Ukraine regex
 ! v0.48 14/7/23 add '*deliberate error' to test error handling when storing regexps.
 ! v0.49 14/7/23 removed deliberate error.
+! v0.50 16/07/23 White saviour/privilege/supremacy, cultural appropriation, just stop oil.
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -233,6 +239,7 @@ conspiracy\s*theor#i#H
 creationis[tm]#i##
 Crimea#i#H#
 Christopher\s*Hitchens#i#H#
+cultural\s*appropriation#i##
 
 da\s*vinci\s*code#i#H#
 daily\s*mail#i##
@@ -303,11 +310,13 @@ irish\s*free#i#H#
 Isidore\s*of\s*madrid#i##
 \bISIS\b##H#
 \bIslam#i##Bislama is a creole language
+
 je\s*suis\s*Paris#i#H#
 jehovah('|s)*\swit#i##
 jerry\s*adams#i#H#
 Jesuit#i##
 jihad#i#H#
+just\s*stop\s*oil#i##
 
 Kleptocene#i#H
 
@@ -402,6 +411,7 @@ Taliban#i#H
 Terroris[tm]#i#H
 the\s*matrix#i
 the\s*simpsons#i##
+thought\s*crime#i##
 tibet#i##
 tony\s*blair#i#H#
 \bTrump\b#i#H#
@@ -424,7 +434,7 @@ victim\s*generation#i##
 !vigilante#i##maybe too general
 Voltaire#i#
 warmonger#i#H
-white\s*genocide#i#H
+white\s*(genocide|saviour|privilege|supremacy)#i#H
 Woke\s*movement#i#H
 World\s*war\s*(3|III)#i#H
 WW(3|III)/##H
