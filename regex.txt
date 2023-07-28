@@ -53,7 +53,7 @@
 
 !--------------------------------------------------
 
-Version#0.51
+Version#0.52
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -95,6 +95,7 @@ Version#0.51
 ! v0.49 14/7/23 removed deliberate error.
 ! v0.50 16/07/23 White saviour/privilege/supremacy, cultural appropriation, just stop oil.
 ! v0.51 28/07/23 Assisted suicide, euthan(asia|i(z|s)e), mercy killing
+! v0.52 28/07/23 Assisted (suicide|dying)
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -186,7 +187,7 @@ test#animal rising#match
 artificial\s*intelligence#i
 axis\s*of\s*evil#i#H
 
-assisted\s*suicide#i##
+assisted\s*(suicide|dying)#i##
 atheis[tm]#i#H
 test#atheist#match
 test#atheism#match
