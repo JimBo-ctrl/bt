@@ -53,7 +53,7 @@
 
 !--------------------------------------------------
 
-Version#0.56
+Version#0.57
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -100,6 +100,7 @@ Version#0.56
 ! v0.54 17/10/23 downgrade V for Vendetta
 ! v0.55 17/1/24 bigot and white agenda
 ! v0.56 28/2/24 nanotech etc.
+! v0.57 2/3/24 Israel, Gaza, theguardian.com
 
 !BTtestm#i#M#
 !BTtesth#i#H#
