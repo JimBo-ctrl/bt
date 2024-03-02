@@ -270,6 +270,8 @@ flat\s*earth#i##
 (FF|Forever\s*Family)\s*Force#i##
 frankie\s*boyle#i##
 freedom\s*fight#i##
+
+\bGaza\b#i#H#
 gentrif(y|ication)#i##
 George\s*Floyd#i#H#
 George\s*Orwell#i#H#
@@ -284,7 +286,7 @@ global\s*warm#i##
 !\b[^\057]god[^\057]\b#i##offerings were made to the gods from the very earliest times
 graffiti#i##
 gromr#i##
-theguardian#i#H#aimed at google search results
+theguardian.com#i##aimed at google search results
 Guildford\s*(pub\s*)?bomb#i#H#
 
 \bHamas#i#H#
@@ -322,6 +324,7 @@ irish\s*free#i#H#
 Isidore\s*of\s*madrid#i##
 \bISIS\b##H#
 \bIslam#i##Bislama is a creole language
+\bIsrael\b#i##
 
 je\s*suis\s*Paris#i#H#
 jehovah('|s)*\swit#i##
