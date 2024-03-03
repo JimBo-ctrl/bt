@@ -396,6 +396,7 @@ test#Provisional    Irish Republican Army#match
 
 Proud Boys#i##
 The Punisher#i##
+\bThe Prophet\b###Case sensitive and hard space are deliberate
 \bPutin\b#i#H#
 
 Russian?#i##
