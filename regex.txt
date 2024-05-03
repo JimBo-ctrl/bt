@@ -53,7 +53,7 @@
 
 !--------------------------------------------------
 
-Version#0.58
+Version#0.59
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -102,6 +102,7 @@ Version#0.58
 ! v0.56 28/2/24 nanotech etc.
 ! v0.57 2/3/24 Israel, Gaza, theguardian.com
 ! v0.58 3/3/24 The Prophet
+! v0.59 3/5/24 Labour, Liberal, Conservative, Tory.
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -243,6 +244,7 @@ test#commie#match
 test#communist#match
 test#communism#match
 
+Conservative###
 conspiracy\s*theor#i#H
 
 creationis[tm]#i##
@@ -343,6 +345,8 @@ test#xKKK#fail
 test#K.K.K.#match
 test#K K K#match
 
+Labour##H#
+Liberal###
 lives\s*matter#i#H#
 Londongrad#i##
 Malcolm\s*X#i#H#
@@ -435,6 +439,8 @@ the\s*simpsons#i##
 thought\s*crime#i##
 tibet#i##
 tony\s*blair#i#H#
+Tory###
+
 \bTrump\b#i#H#
 
 Trade\s*Cent[er|re]#i#H
