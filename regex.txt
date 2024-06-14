@@ -53,7 +53,7 @@
 
 !--------------------------------------------------
 
-Version#0.59
+Version#0.60
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -103,6 +103,7 @@ Version#0.59
 ! v0.57 2/3/24 Israel, Gaza, theguardian.com
 ! v0.58 3/3/24 The Prophet
 ! v0.59 3/5/24 Labour, Liberal, Conservative, Tory.
+! v0.60 14/6/24 transhuman(ism).
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -446,6 +447,8 @@ Tory###
 Trade\s*Cent[er|re]#i#H
 test#Trade Center#match
 test#Trade Centre#match
+
+\btranshuman#i##
 
 Twin towers#i#H#
 \bU\.N\.(?=(\s.*|$))#i##
