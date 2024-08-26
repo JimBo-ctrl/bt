@@ -451,8 +451,8 @@ tony\s*blair#i#H#
 \bTrump\b#i#H#
 
 World\s*Trade\s*Cent[er|re]#i#H
-test#Trade Center#match
-test#Trade Centre#match
+test#World Trade Center#match
+test#World Trade Centre#match
 
 Twin towers#i#H#
 \bU\.N\.(?=(\s.*|$))#i##
