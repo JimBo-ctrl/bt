@@ -53,7 +53,7 @@
 
 !--------------------------------------------------
 
-Version#0.61
+Version#1.00
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -104,7 +104,8 @@ Version#0.61
 ! v0.58 3/3/24 The Prophet
 ! v0.59 3/5/24 Labour, Liberal, Conservative, Tory.
 ! v0.60 14/6/24 transhuman(ism).
-! v0.61 23/8/24 dox, Mike review list to see if anything can be removed.
+! v0.61 23/8/24 dox.
+! v1.00 26/8/24 Mike full review.
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -125,9 +126,9 @@ test#afghanistan#match
 !test#wrong afghanistan#fail# deliberately set wrong result
 test#afghanista#fail
 
-All(a|ā)hu?\s*ʾ?akbar#i#
+All(a|ā)hu?\s*ʾ?akbar#i#H
 
-Animal\s*farm#i#H
+Animal\s*farm#i#
  test#animalfarm#match
 TEST #Animal     Farm#match
   test   #Animal pig Farm#fail
@@ -139,7 +140,7 @@ test#anti-theist#match
 test#antitheist#match
 !test#antitheist person#fail# deliberately set wrong result
 
-antifa#i
+anti(fa|-war)#i#H
 
 ! matching A.I. was a bit of a pain, because 'AI' is so small and could be in
 ! other acronyms I wanted it to be a whole word and expected \b at the
@@ -156,7 +157,7 @@ test#A.I. y#match
 test#xA.I.y#fail
 test#x A.I. y#match
 
-Artificial\sIntelligence#i#H
+artificial\s*intelligence#i#
 
 ! AI Art has caused specific problems for Mike.  I've made it
 ! case insensitive for now as is a longer string than just AI.
@@ -191,17 +192,15 @@ animal\s*(rights|rising|rebellion)#i#H
 test#animal rebellion#match
 test#animal rising#match
 
-!\barian\b#i# is arian really a problem?
-artificial\s*intelligence#i
 axis\s*of\s*evil#i#H
 
 assisted\s*(suicide|dying)#i##
-atheis[tm]#i#H
+atheis[tm]#i#
 test#atheist#match
 test#atheism#match
 test#atheist_fur#match
 
-Betty\s*Campbell#i#H#
+!Betty\s*Campbell#i#H#
 bigot#i##
 bin\s*laden#i#H#
 black\s*(power|panthers|lives)#i#H#
@@ -219,16 +218,16 @@ test#B.L.M. y#match
 test#xB.L.M.y#fail
 test#x B.L.M. y#match
 
-blyton#i#H#
+!blyton#i#H#
 bombing#i##
 Boogaloo#i#H#
-British\s*empire#i##
+(british|french|german|spanish|portgugese|otterman|russian)\sempire#i##
 buddis[tm]#i##
 
 Bulletin\s*of\s*the\s*Atomic\s*Scientists#i#H#
 burqa#i#H#
 !C[\s\.]*S[\s\.]*Lewis#i#H#Mike says never been a problem
-caliphate#i#H#
+caliphate#i##
 call\s*to\s*prayer#i##
 cannabis#i##
 cancel\s*culture#i#H#
@@ -238,7 +237,8 @@ Chamberlain#i##
 Charlie\s*Hebdo#i#H#
 chavs#i##
 !civil\s*war#i##too non-specific
-climate\s*(change|rebellion)#i#H# 
+climate\s*change#i## 
+climate\s*rebellion#i#H# 
 colonialis[tm]#i##
 
 comm(ie|unis[tm])#i##
@@ -246,19 +246,19 @@ test#commie#match
 test#communist#match
 test#communism#match
 
-Conservative###
+Conservative##H#
 conspiracy\s*theor#i#H
 
-creationis[tm]#i##
+creationis[tm]#i#H#
 Crimea#i#H#
 Christopher\s*Hitchens#i#H#
 cultural\s*appropriation#i##
 
 da\s*vinci\s*code#i#H#
 daily\s*mail#i##
-dali\s*lama#i##
+dali\s*lama#i#H#
 Dan\s*Brown#i#H#
-dawkins#i#H#
+richard\s*dawkins#i#H#
 death\s*penalty#i##
 !*deliberate error#i##
 Doomsday\s*clock#i##
@@ -268,19 +268,21 @@ Doomsday\s*clock#i##
 
 Emmeline\s*Pankhurst#i#H#
 euthan(asia|i(z|s)e)#i##
-extremist#i#H#
+extremis(t|m)#i#H#
 
-Feminis[tm]#i#H#
-fetlife#i##
+(radical\s)*feminis[tm]#i#H#
+feminis[tm]#i##
+!fetlife#i##
 flat\s*earth#i##
-(FF|Forever\s*Family)\s*Force#i##
+(FF|Forever\s*Family)\s*Force#i##anti-racism and black power organisation in the UK
 frankie\s*boyle#i##
 freedom\s*fight#i##
 
 \bGaza\b#i#H#
+(gen|dem)ocid(e|al)#i#H
 gentrif(y|ication)#i##
 George\s*Floyd#i#H#
-George\s*Orwell#i#H#
+George\s*Orwell#i##
 Germain\s*Greer#i#H#
 
 \bGandhi\b#i#H#note: CampingandHiking contains gandhi :)  
@@ -289,20 +291,22 @@ test#Gandhi man#match
 
 \bGhandi#i#H#common misspelling longhandinline :)
 global\s*warm#i##
-!\b[^\057]god[^\057]\b#i##offerings were made to the gods from the very earliest times
+god\sdelusion#i#H
+gordon\sbrown\b#i#H
 graffiti#i##
-gromr#i##
+!gromr#i##
 theguardian.com#i##aimed at google search results
 Guildford\s*(pub\s*)?bomb#i#H#
 
 \bHamas#i#H#
-\bHead\s*Topics#i#H#
+\bHead\s*Topics#i#H#Head Topics publish breaking news
 \bHezbollah#i#H#
 Hilary\s*Clinton#i#H#
 Hiroshima#i##
-Hitler#i##
-Homeland\s*Security#i##
+Hitler#i#H#
+Homeland\s*Security#i#H#
 I\s*am\s*charlie#i#H#
+je\s*suis\s*charlie#i#H#
 
 !influencer#i#H#
 
@@ -323,21 +327,21 @@ test#IRA y#match
 test#xIRAy#fail
 test#x IRA y#match
 
-\biran(ian)\b#i##
-iraq\s*war#i##
-irish\s*free#i#H#
+\biran(ian)\b#i#H#
+iraq\s*war#i#H#
+irish\s*(free|independance)#i#H#
 
-Isidore\s*of\s*madrid#i##
 \bISIS\b##H#
-\bIslam#i##Bislama is a creole language
-\bIsrael\b#i##
+\bIslam#i#H#Not: Bislama is a creole language, will pick up -ist, -ism, -ic, -aphobe
+\bIsrael#i#H#includes israelite
 
 je\s*suis\s*Paris#i#H#
+I\s*am\s*Paris#i#H#
 jehovah('|s)*\swit#i##
-jerry\s*adams#i#H#
-Jesuit#i##
+[G|J]erry\s*adams#i#H#
+!Jesuit#i##
 jihad#i#H#
-just\s*stop\s*oil#i##
+just\s*stop\s*oil#i#H#
 
 Kleptocene#i#H
 
@@ -349,15 +353,14 @@ test#K.K.K.#match
 test#K K K#match
 
 Labour##H#
-Liberal###
+Liberal##H#
 lives\s*matter#i#H#
 Londongrad#i##
 Malcolm\s*X#i#H#
 marijuana#i##Mike asked for this to be added
-Martin\s*Luther#i#H#
-matt\s*groe[G|N]ing#i#H#Spelt with N really
-mercy\s*killing#i##
-\bMichael\s*Collins\b#i#H#
+Martin\s*Luther\s*King#i#H#
+mercy\s*killing#i#H#
+\b(Mick|Michael)\s*Collins\b#i#H#
 Michael\s*Moore#i#H#
 mind\s*control#i##
 !minneapolis#i#H#thinking about it
@@ -369,51 +372,55 @@ test#moon landing denier#match
 
 Mormon#i##
 mosque#i#H#
-\bMP\b###
+!\bMP\b###
 Muslim#i#H#
 
-\bnano(bot|robot|tech|tube|particle|material)#i##
+\bnano(bot|robot|tech|tube|material)#i#H#
+\bnanoparticle#i##
+
 
 Nagasaki#i##
 
 \bN[\s\.]*A[\s\.]*T[\s\.]*O[\.]*(?=(\s.*|$))###
-\bNazi\b#i##
+\bNazi\b#i#H#
 nigger#i#H#
-northern independ#i##
+!northern independ#i##
 (Northern|N\.)\s*Ireland#i##
 !\bNike\b###why did I have Nike
 \bObama\b#i#H#
-Pacifis[tm]#i#H#
+Pacifis[tm]#i##
 \bPalestine\b#i#H#
 papist#i##
-\bpeado#i#H
-\bpaedo#i#H#have seen this embedded in a surname hence the \b
-\bpedo\b#i#H
-Pedophil#i#H
+
+\bp(e|ae|ea)do#i#H#have seen this embedded in a surname hence the \b, will pick up paedophile etc too
+
 \bP[\s\.]*E[\s\.]*T[\s\.]*A[\.]*(?=(\s.*|$))##H#
 pinko#i##
-political(ly|\s)*correct#i##
-Pope\s*Francis#i##
-propaganda#i#H
+political(ly|\s)*correct#i#H#
+Pope\s*Francis#i#H#
+propagand(a|ist)#i#H
 
 (Provisional\s*)?Irish\s*Republican\s*Army#i#H#
 test#Provisional Irish Republican Army#match
 test#Irish Republican Army#match
 test#Provisional    Irish Republican Army#match
 
-Proud Boys#i##
-The Punisher#i##
+Proud Boys#i#H#
+!The Punisher#i##
 \bThe Prophet\b###Case sensitive and hard space are deliberate
 \bPutin\b#i#H#
 
 Russian?#i##
 race relation#i##
-Racis[tm]#i##
+Racis[tm]#i#H#
 radicalis#i##
-russell\s*brand#i#H#
+Radical\s##H#
+radical\sislam#i#H#
+rousseau#i#H
+
 quaker(?!\s*(brand|oats))#i##if not followed by brand or oats, see slavery below
-Saint\s*Isidore#i##
-satanis[tm]#i##
+
+satanis[tm]#i#H#
 scientolog(y|ist)#i#H#
 (scottish|welsh)\s*independance#i#H#
 
@@ -430,41 +437,37 @@ scientolog(y|ist)#i#H#
 
 slavery(?!\s*(statement|act))#i##  
 
-social\s*justice#i
+social\s*justice#i#H
 south\s*park#i#H
-stephen\s*king#i#H#
 suffragette#i#H
-suicid(e|al)#i
+suicid(e|al)#i##includes suicide bomber
 Taliban#i#H
 Terroris[tm]#i#H
-the\s*matrix#i
-the\s*simpsons#i##
-thought\s*crime#i##
+thought\s*crime#i#H#
 tibet#i##
 tony\s*blair#i#H#
-Tory###
+\bTory\b##H#
 
 \bTrump\b#i#H#
 
-Trade\s*Cent[er|re]#i#H
+World\s*Trade\s*Cent[er|re]#i#H
 test#Trade Center#match
 test#Trade Centre#match
-
-\btranshuman#i##
 
 Twin towers#i#H#
 \bU\.N\.(?=(\s.*|$))#i##
 
 Ukrain[e|ian]#i#H#
 test#ukraine#match
-under\s*one\s*banner#i#H#
+!under\s*one\s*banner#i#H# mike not heard of them
 united\s*nations#i##
 \bVegan\b#i##
-V\s*for\s*Vendetta#i##
+V\s*for\s*Vendetta#i#H#
 !Vegetarian#i##too common and Mike "doesn't have a problem" with vegetarians
 victim\s*generation#i##
 !vigilante#i##maybe too general
-Voltaire#i#
+Voltaire#i#H
+
 warmonger#i#H
 white\s*(genocide|saviour|privilege|supremacy|agenda)#i#H
 test#White Agenda#match
