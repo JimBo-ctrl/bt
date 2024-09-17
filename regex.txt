@@ -53,7 +53,7 @@
 
 !--------------------------------------------------
 
-Version#1.02
+Version#1.03
 
 ! v0.12 added trigger severity level test entries
 ! v0.13 added actual high level severity designations
@@ -108,6 +108,7 @@ Version#1.02
 ! v1.00 26/8/24 Mike full review.
 ! v1.01 3/9/24 Steven Weinberg
 ! v1.02 6/9/24 (school|mass)\s*shoot
+! v1.03 17/9/24 space force
 
 !BTtestm#i#M#
 !BTtesth#i#H#
@@ -442,6 +443,7 @@ slavery(?!\s*(statement|act))#i##
 
 social\s*justice#i#H
 south\s*park#i#H
+space\s*force#i##
 suffragette#i#H
 suicid(e|al)#i##includes suicide bomber
 \bste(v|ph)en\s*w(ei|ie)nb[eu]rg#i#H
